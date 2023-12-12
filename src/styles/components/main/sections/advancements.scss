@@ -1,0 +1,162 @@
+.advancements {
+	min-height: 692px;
+	height: 100%;
+	background-color: var(--bright-brown-bg-color);
+
+	@media (max-width:1150px) {
+		min-height: 644px;
+		display: block;
+	}
+
+	@media (max-width:739px) {
+		min-height: 900px;
+	}
+
+	&__container {
+		padding-top: 140px;
+
+		@media (max-width:1150px) {
+			padding-top: 55px;
+		}
+
+		@media (max-width:739px) {
+			padding-top: 55px;
+
+		}
+	}
+
+	&__title {
+		color: var(--white-bg-color);
+
+		@media (max-width:1300px) {
+			font-size: 40px;
+		}
+
+		@media (max-width:575px) {
+			font-size: 28px;
+			line-height: 100%;
+		}
+	}
+
+	&__items {
+		margin-top: 50px;
+		max-height: 140px;
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+		gap: 20px;
+
+		@media (max-width:1400px) {
+			max-height: 120px;
+		}
+
+
+		@media (max-width:1150px) {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@media (max-width:739px) {
+			gap: 10px;
+			margin-top: 40px;
+			grid-template-columns: repeat(1, 1fr);
+
+		}
+	}
+
+	&__item {
+		background-color: var(--beige-200-bg-color);
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		position: relative;
+		padding: 20px;
+		grid-column: span 2;
+
+
+		&:nth-child(1) {
+			grid-column: span 3;
+
+			@media (max-width:1150px) {
+				grid-column: span 1;
+			}
+		}
+
+		&:nth-child(2) {
+			grid-column: span 3;
+
+			@media (max-width:1150px) {
+				grid-column: span 1;
+			}
+		}
+
+		@media (max-width:1150px) {
+			grid-column: span 1;
+		}
+
+		&:last-child {
+			@media (max-width:1150px) {
+				grid-column: span 2;
+			}
+
+			@media (max-width:739px) {
+				grid-column: span 1;
+			}
+		}
+
+
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 20px 20px 20px 0px;
+			border-color: var(--bright-brown-bg-color) transparent transparent transparent
+		}
+
+
+
+
+	}
+
+	&__image {
+		width: 100px;
+		height: 100px;
+
+		@media (max-width:1400px) {
+			width: 80px;
+			height: 80px;
+		}
+	}
+
+	&__item-image {
+
+		position: relative;
+
+		&::after {
+			content: '';
+			width: 1px;
+			height: 100%;
+			background-color: var(--bright-brown-bg-color);
+			position: absolute;
+			right: -15px;
+			top: 0;
+			bottom: 0;
+			display: block;
+		}
+	}
+
+	&__text {
+		margin-left: 40px;
+
+		@media (max-width:1400px) {
+			font-size: 20px;
+		}
+
+		@media (max-width:739px) {
+			font-size: 16px;
+		}
+	}
+}

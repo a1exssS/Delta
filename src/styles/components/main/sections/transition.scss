@@ -1,0 +1,25 @@
+.transition {
+	background: url("../Images/transition_bg.png") no-repeat local center bottom var(--beige-200-bg-color);
+	background-size: cover;
+	height: 100%;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	width: 100%;
+	min-height: 812px;
+	overflow: hidden;
+
+	@media (max-width:1239px) {
+		min-height: 746px;
+
+	}
+
+	@media (max-width:919px) {
+		min-height: 600px;
+
+	}
+
+	@media (max-width:650px) {
+		min-height: 340px;
+	}
+}

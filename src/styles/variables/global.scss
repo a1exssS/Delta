@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Tektur:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+	--font-family-primary: 'Tektur',
+		sans-serif;
+	--font-family-secondary: 'IBM Plex Sans',
+		sans-serif;
+	--font-h1: 56px;
+	--font-h1-subtitle: 40px;
+	--font-line-sm: 24px;
+	--font-sm: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
+	--font-size-l: 24px;
+	--font-line-l: 32px;
+	--font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
+	--font-size-xl: 32px;
+	--font-line-xl: 40px;
+	--font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
+
+	// Размеры
+	--navbar-height: 50px;
+	--sidebar-width: 300px;
+	--sidebar-width-collapsed: 80px;
+
+	// z - Индексы
+	--modal-z-index: 10;
+
+	// Цвета
+	--overlay-color: rgba(0 0 0 / 60%);
+	--red-light: #f00;
+	--red-dark: #ce0505;
+}
+
+.h1 {
+
+
+
+	&-lg-bold {
+		font-family: var(--font-family-primary);
+		font-size: 80px;
+		text-transform: uppercase;
+		line-height: calc(80px * 1.15);
+		font-weight: bold;
+	}
+
+	&-md-bold {
+		font-family: var(--font-family-primary);
+		font-size: 56px;
+		text-transform: uppercase;
+		line-height: calc(56px * 1.15);
+		font-weight: bold;
+	}
+
+	&-sm-bold {
+		font-family: var(--font-family-primary);
+		font-size: 32px;
+		text-transform: uppercase;
+		line-height: calc(32px * 1.15);
+		font-weight: bold;
+	}
+}
+
+.h2 {
+
+	&-lg-bold {
+		font-family: var(--font-family-primary);
+		font-size: 56px;
+		line-height: calc(56px * 1.15);
+		font-weight: bold;
+	}
+
+	&-md-bold {
+		font-family: var(--font-family-primary);
+		font-size: 40px;
+		line-height: calc(40px * 1.15);
+		font-weight: bold;
+	}
+
+	&-sm-bold {
+		font-family: var(--font-family-primary);
+		font-size: 28px;
+		line-height: calc(28px * 1.15);
+		font-weight: bold;
+	}
+}
+
+.h3 {
+
+	&-lg-bold {
+		font-family: var(--font-family-secondary);
+		font-size: 40px;
+		line-height: calc(40px * 1.15);
+		font-weight: bold;
+	}
+
+	&-md-bold {
+		font-family: var(--font-family-secondary);
+		font-size: 28px;
+		line-height: calc(28px * 1.15);
+		font-weight: bold;
+	}
+
+	&-sm-bold {
+		font-family: var(--font-family-secondary);
+		font-size: 20px;
+		line-height: calc(20px * 1.15);
+		font-weight: bold;
+	}
+
+	&-xsm-bold {
+		font-family: var(--font-family-secondary);
+		font-size: 16px;
+		line-height: calc(16px * 1.15);
+		font-weight: bold;
+	}
+}
+
+.click {
+
+	&-lg-bold {
+		font-family: var(--font-family-secondary);
+		line-height: calc(28px * 1.3);
+		font-size: 28px;
+		font-weight: 500;
+	}
+
+	&-md-bold {
+		font-family: var(--font-family-secondary);
+		line-height: calc(20px * 1.3);
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	&-md-regular {
+		font-family: var(--font-family-secondary);
+		line-height: calc(20px * 1.3);
+		font-size: 20px;
+		font-weight: normal;
+	}
+
+	&-sm-bold {
+		font-family: var(--font-family-secondary);
+		line-height: calc(16px * 1.3);
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	&-sm-regular {
+		font-family: var(--font-family-secondary);
+		font-size: 16px;
+		line-height: calc(16px * 1.3);
+		font-weight: normal;
+	}
+
+}
+
+.text {
+	&-lg {
+		font-family: var(--font-family-secondary);
+		font-size: 24px;
+		line-height: calc(24px * 1.3);
+		font-weight: normal;
+	}
+
+	&-md {
+		font-family: var(--font-family-secondary);
+		font-size: 20px;
+		line-height: calc(20px * 1.3);
+		font-weight: normal;
+	}
+
+	&-sm-bold {
+		font-family: var(--font-family-secondary);
+		font-size: 18px;
+		line-height: calc(18px * 1.3);
+		font-weight: bold;
+	}
+
+	&-sm {
+		font-family: var(--font-family-secondary);
+		font-size: 16px;
+		line-height: calc(16px * 1.3);
+		font-weight: normal;
+	}
+
+	&-xsm {
+		font-family: var(--font-family-secondary);
+		font-size: 14px;
+		line-height: calc(14px * 1.3);
+		font-weight: normal;
+	}
+}
+
+.container {
+	max-width: calc(100% - 200px);
+
+	@media (max-width:1350px) {
+		max-width: calc(100% - 80px);
+	}
+
+	@media (max-width:1239px) {
+		max-width: calc(100% - 40px);
+	}
+
+	@media (max-width:739px) {
+		max-width: calc(100% - 20px);
+	}
+
+	margin: 0 auto;
+}
+
+body {
+	font-family: var(--font-family-secondary);
+}
