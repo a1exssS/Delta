@@ -14,15 +14,15 @@
 	s.addEventListener("click", () => {
 		U && (U.dataset.menu = "close", ft(U), Pe.innerHTML = `
 				<svg width="32px" height="32px">
-					<use xlink:href="../Images/sprite.svg#close" />
+					<use xlink:href="./Images/sprite.svg#close" />
 				</svg>`)
 	})
 }); function ut() {
 	U && U.getAttribute("data-menu") === "open" ? (U.dataset.menu = "close", ft(U), Pe.innerHTML = `
 			<svg class="header__img-icon" >
-				<use xlink: href = "../Images/sprite.svg#menu" />
+				<use xlink: href = "./Images/sprite.svg#menu" />
 			</svg>`) : U && (U.dataset.menu = "open", ui(U), Pe.innerHTML = `
 			<svg class="header__img-icon">
-				<use xlink:href="../Images/sprite.svg#close" />
+				<use xlink:href="./Images/sprite.svg#close" />
 			</svg>`)
 } Pe.addEventListener("click", ut); pi.addEventListener("click", ut);
