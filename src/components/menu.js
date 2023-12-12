@@ -12,7 +12,7 @@ headerLinks.forEach(event => {
 			enableBodyScroll(menu)
 			openButton.innerHTML = `
 				<svg width="32px" height="32px">
-					<use xlink:href="src/Images/sprite.svg#close" />
+					<use xlink:href="../src/Images/sprite.svg#close" />
 				</svg>`
 		}
 
@@ -24,7 +24,7 @@ function toggleMenu() {
 		enableBodyScroll(menu)
 		openButton.innerHTML = `
 			<svg class="header__img-icon" >
-				<use xlink: href = "src/Images/sprite.svg#menu" />
+				<use xlink: href = "../src/Images/sprite.svg#menu" />
 			</svg>`
 	} else {
 		if (menu) {
@@ -32,7 +32,7 @@ function toggleMenu() {
 			disableBodyScroll(menu)
 			openButton.innerHTML = `
 			<svg class="header__img-icon">
-				<use xlink:href="src/Images/sprite.svg#close" />
+				<use xlink:href="../src/Images/sprite.svg#close" />
 			</svg>`
 		}
 	}

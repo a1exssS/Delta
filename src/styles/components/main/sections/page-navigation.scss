@@ -1,0 +1,23 @@
+.page-navigation {
+
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+
+		span {
+			color: var(--black-text-color);
+			display: inline-block;
+			margin-right: 5px;
+		}
+	}
+
+	&__link {
+		display: block;
+		margin-right: 2px;
+	}
+}

@@ -3,7 +3,7 @@
 	min-height: 560px;
 
 	@media (max-width:1300px) {
-		min-height: 440px;
+		min-height: 410px;
 	}
 
 	@media (max-width:991px) {
@@ -34,6 +34,25 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+
+	&__image {
+		width: 100%;
+		object-fit: cover;
+		height: 380px;
+
+		@media (max-width:1300px) {
+			height: 300px;
+
+		}
+
+		@media (max-width:991px) {
+			object-position: bottom;
+		}
+
+		@media (max-width:650px) {
+			height: 220px;
+		}
 	}
 
 

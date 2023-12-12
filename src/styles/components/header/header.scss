@@ -453,6 +453,7 @@
 
 	&__link {
 		display: flex;
+		text-wrap: nowrap;
 		flex-wrap: nowrap;
 		display: inline-block;
 		color: var(--black-text-color);

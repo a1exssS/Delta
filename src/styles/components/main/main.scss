@@ -8,3 +8,17 @@
 @import "sections/about";
 @import "sections/transition";
 @import "sections/request";
+@import "sections/page-navigation";
+@import "sections/page-not-found";
+
+.main {
+	&__page-not-found {
+		background-color: var(--beige-100-bg-color);
+		padding-top: 50px;
+
+		@media (max-width:676px) {
+			padding-top: 40px;
+		}
+	}
+
+}
