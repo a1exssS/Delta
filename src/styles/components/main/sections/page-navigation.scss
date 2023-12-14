@@ -1,4 +1,10 @@
 .page-navigation {
+	background-color: var(--beige-100-bg-color);
+	padding-top: 60px;
+
+	@media (max-width:739px) {
+		padding-top: 40px;
+	}
 
 	&__container {
 		display: flex;
@@ -17,7 +23,9 @@
 	}
 
 	&__link {
+		color: var(--black-text-color);
 		display: block;
-		margin-right: 2px;
+		margin-right: 4px;
+
 	}
 }
