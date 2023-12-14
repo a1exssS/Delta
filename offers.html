@@ -93,7 +93,7 @@
 			</div>
 		</nav>
 	</header>
-	<main class="main main__page-not-found">
+	<main class="main main__all-offers">
 		<section class="page-navigation">
 			<div class="container page-navigation__container">
 				<div class="page-navigation__item">
@@ -106,25 +106,83 @@
 				</div>
 			</div>
 		</section>
-		<section class="page-not-found">
-			<div class="container page-not-found__container">
-				<div class="page-not-found__box">
-					<picture>
-						<source loading="lazy" srcset="./Images/404.webp" media="(min-width: 930px)" />
-						<img loading="lazy" src="./Images/404.png" class="page-not-found__image" alt="404" />
-					</picture>
-				</div>
-				<div class="page-not-found__box">
-					<h1 class="page-not-found__title h1-lg-bold">Страница не найдена</h1>
-					<p class="page-not-found__text text-md">К сожалению, страницы по такому адресу не существует. Возможно,
-						она была
-						удалена,
-						или в ссылке допущена ошибка.</p>
-					<div class="page-not-found__links">
-						<a href="" class="page-not-found__link click-md-bold">Вернуться на главную</a>
-						<a href="" class="page-not-found__link click-md-bold">Смотреть проекты</a>
+		<section class="all-offers">
+			<div class="container all-offers__container">
+				<h1 class="h1-lg-bold all-offers__section-title">Акции</h1>
+				<div class="all-offers__box">
+					<div class="all-offers__item">
+						<picture>
+							<source loading="lazy" srcset="./Images/offer_image.webp" />
+							<img loading="lazy" src="./Images/offer_image.jpg" alt="" class="all-offers__image">
+						</picture>
+					</div>
+					<div class="all-offers__item">
+						<div>
+							<h2 class="all-offers__title h2-md-bold">
+								-5% на строительство дома зимой
+							</h2>
+							<span class="all-offers__subtitle text-md">Ежегодно с 01 ноября до 01 марта вы
+								можете заказать
+								строительство любого дома на 5% дешевле, чем летом</span>
+						</div>
 					</div>
 				</div>
+				<div class="all-offers__box">
+					<div class="all-offers__item">
+						<picture>
+							<source loading="lazy" srcset="./Images/offer_big-image.webp" />
+							<img loading="lazy" src="./Images/offer_big-image.jpg" alt="" class="all-offers__image">
+						</picture>
+					</div>
+					<div class="all-offers__item">
+						<div>
+							<h2 class="all-offers__title h2-md-bold">
+								Подарки при заказе дома от определённой суммы
+							</h2>
+							<span class="all-offers__subtitle text-md">Получите подарок при заказе дома на сумму
+								от 300 000 ₽</span>
+							<ul class="all-offers__column text-sm">
+								<li class="all-offers__column-item">от 300 000 ₽ — обработка-покраска обвязки и лаг первого
+									этажа</li>
+								<li class="all-offers__column-item">от 500 000 ₽ — двойная обвязка</li>
+								<li class="all-offers__column-item">от 600 000 ₽ — теплый угол</li>
+								<li class="all-offers__column-item">от 700 000 ₽ — металлическая дверь производства Россия
+									(утепленная)</li>
+								<li class="all-offers__column-item">от 800 000 ₽ — нагеля</li>
+								<li class="all-offers__column-item">от 1 000 000 ₽ — ройки в окна</li>
+							</ul>
+							<span class="all-offers__subtitle text-sm">Подарки суммируются. Это значит, что при
+								заказе
+								строительства от 1 000 000 ₽ вам будут доступны все подарки из списка.</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="request">
+			<div class="container request__container">
+				<h2 class="request__title h2-lg-bold">Оставьте заявку</h2>
+				<div class="request__item">
+					<span class="request__text text-md">Мы свяжемся с Вами в ближайшее время</span>
+					<span class="request__text text-md">
+						Отправляя заявку, вы соглашаетесь с 
+						<a href="" class="request__link">
+							Политикой обработки персональных данных.
+						</a>
+					</span>
+				</div>
+				<form action="" class="request__form">
+					<label for="name">
+						<input id="name" name="name" type="text" placeholder="Ваше имя" class="request__input">
+					</label>
+					<label for="email">
+						<input id="email" name="email" type="email" placeholder="E-mail *" class="request__input">
+					</label>
+					<label for="phone">
+						<input type="text" id="phone" name="phone" placeholder="+7 999 999 99 99 *" class="request__input">
+					</label>
+					<button class="request__button click-md-bold" type="submit">Отправить</button>
+				</form>
 			</div>
 		</section>
 	</main>
