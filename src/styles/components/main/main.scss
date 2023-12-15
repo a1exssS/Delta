@@ -13,6 +13,13 @@
 @import "sections/all-offers";
 @import "sections/policy";
 @import "sections/mortgage";
+@import "sections/about-us";
+@import "sections/about-company";
+@import "sections/guarantee";
+@import "sections/documents";
+@import "sections/built-house";
+@import "sections/review";
+@import "sections/location";
 
 .main {
 	&__page-not-found {
@@ -21,6 +28,12 @@
 
 		@media (max-width:676px) {
 			padding-top: 40px;
+		}
+	}
+
+	&__built-house {
+		.projects {
+			min-height: auto;
 		}
 	}
 

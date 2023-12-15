@@ -49,18 +49,19 @@ if (document.querySelector('.myHeroSwiper')) {
 }
 
 window.addEventListener('resize', () => {
-
-	// MyProjectsSwiper
-	MyHeroSwiper.params.slidesPerView = getWidthValueHero()
-	MyHeroSwiper.params.autoplay = {
-		delay: 3000
+	if (MyHeroSwiper) {
+		MyHeroSwiper.params.slidesPerView = getWidthValueHero()
+		MyHeroSwiper.params.autoplay = {
+			delay: 3000
+		}
+		MyHeroSwiper.update()
 	}
-	MyHeroSwiper.update()
+	if (MyProjectsSwiper) {
+		MyProjectsSwiper.params.slidesPerView = getWidthValue();
+		MyProjectsSwiper.params.spaceBetween = getSpaceValue()
+		MyProjectsSwiper.update();
+	}
 
-	// MyProjectsSwiper
-	MyProjectsSwiper.params.slidesPerView = getWidthValue();
-	MyProjectsSwiper.params.spaceBetween = getSpaceValue()
-	MyProjectsSwiper.update();
 });
 
 function getWidthValue() {

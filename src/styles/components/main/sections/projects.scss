@@ -194,6 +194,18 @@
 		}
 	}
 
+	&__item_scale {
+		&:hover {
+			.projects__image {
+				transform: scale(1);
+			}
+		}
+
+		div::before {
+			border-color: transparent var(--beige-100-bg-color) transparent transparent;
+		}
+	}
+
 	&__image-box {
 		transition: .2s linear;
 		max-height: 220px;
