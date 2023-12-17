@@ -1,0 +1,33 @@
+.about-product {
+	min-height: 410px;
+	padding: 140px 0;
+	background-color: var(--beige-100-bg-color);
+
+	&__container {}
+
+	&__title {
+		background: var(--gradient-color);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+
+		@media (max-width:1300px) {
+			font-size: 40px;
+		}
+
+		@media (max-width:575px) {
+			font-size: 28px;
+			line-height: 100%;
+		}
+	}
+
+	&__box {
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		max-width: 60%;
+	}
+
+	&__text {}
+
+}

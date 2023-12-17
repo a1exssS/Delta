@@ -5,35 +5,9 @@
 		sans-serif;
 	--font-family-secondary: 'IBM Plex Sans',
 		sans-serif;
-	--font-h1: 56px;
-	--font-h1-subtitle: 40px;
-	--font-line-sm: 24px;
-	--font-sm: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
-	--font-size-l: 24px;
-	--font-line-l: 32px;
-	--font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
-	--font-size-xl: 32px;
-	--font-line-xl: 40px;
-	--font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
-
-	// Размеры
-	--navbar-height: 50px;
-	--sidebar-width: 300px;
-	--sidebar-width-collapsed: 80px;
-
-	// z - Индексы
-	--modal-z-index: 10;
-
-	// Цвета
-	--overlay-color: rgba(0 0 0 / 60%);
-	--red-light: #f00;
-	--red-dark: #ce0505;
 }
 
 .h1 {
-
-
-
 	&-lg-bold {
 		font-family: var(--font-family-primary);
 		font-size: 80px;
@@ -154,11 +128,25 @@
 }
 
 .text {
+	&-lg-bold {
+		font-family: var(--font-family-secondary);
+		font-size: 24px;
+		line-height: calc(24px * 1.3);
+		font-weight: bold;
+	}
+
 	&-lg {
 		font-family: var(--font-family-secondary);
 		font-size: 24px;
 		line-height: calc(24px * 1.3);
 		font-weight: normal;
+	}
+
+	&-md-bold {
+		font-family: var(--font-family-secondary);
+		font-size: 18px;
+		line-height: calc(18px * 1.3);
+		font-weight: bold;
 	}
 
 	&-md {
@@ -168,18 +156,18 @@
 		font-weight: normal;
 	}
 
-	&-sm-bold {
-		font-family: var(--font-family-secondary);
-		font-size: 18px;
-		line-height: calc(18px * 1.3);
-		font-weight: bold;
-	}
-
 	&-sm {
 		font-family: var(--font-family-secondary);
 		font-size: 16px;
 		line-height: calc(16px * 1.3);
 		font-weight: normal;
+	}
+
+	&-sm-bold {
+		font-family: var(--font-family-secondary);
+		font-size: 16px;
+		line-height: calc(16px * 1.3);
+		font-weight: bold;
 	}
 
 	&-xsm {

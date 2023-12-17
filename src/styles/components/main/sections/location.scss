@@ -31,6 +31,12 @@
 		}
 	}
 
+
+	&__map-holder {
+
+		overflow: hidden;
+	}
+
 	&__item {
 		margin-top: 50px;
 		border: 1px solid var(--dark-beige-border-color);
@@ -38,8 +44,6 @@
 		@media (max-width:919px) {
 			border: 1px solid var(--dark-beige-border-color);
 			min-height: 240px;
-			max-height: 360px;
-			overflow: hidden;
 		}
 
 		position: relative;
@@ -57,9 +61,6 @@
 			background-color: var(--beige-200-bg-color);
 			z-index: 1;
 
-			@media (max-width:739px) {
-				border-width: 0px 30px 30px 0px;
-			}
 		}
 
 		&::after {
@@ -74,10 +75,6 @@
 			border-bottom: 1px solid var(--dark-beige-border-color);
 			background-color: var(--beige-200-bg-color);
 			z-index: 1;
-
-			@media (max-width:739px) {
-				border-width: 0px 30px 30px 0px;
-			}
 		}
 	}
 
@@ -88,10 +85,14 @@
 		width: 100%;
 
 		@media (max-width:919px) {
-			border: 1px solid var(--dark-beige-border-color);
 			min-height: 240px;
 			max-height: 360px;
 			transform: scale(1.5);
+		}
+
+		@media (max-width:575px) {
+			transform: scale(2);
+			max-height: 240px;
 		}
 	}
 }

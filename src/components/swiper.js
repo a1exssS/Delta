@@ -1,11 +1,58 @@
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import Swiper from 'swiper/bundle';
 
-let MyOfferSwiper: Swiper;
-let MyProjectsSwiper: Swiper;
-let MyHeroSwiper: Swiper;
+let MyOfferSwiper;
+let MyProjectsSwiper;
+let MyHeroSwiper;
+let MyResultsPreviewSwiper;
+const swiper = new Swiper(".mySwiper1", {
+	direction: "vertical",
+	//loop: true,
+	spaceBetween: 10,
+	slidesPerView: 4,
 
+	freeMode: false,
+	watchSlidesProgress: true,
+	navigation: {
+		nextEl: ".house-slider__swiper-button-next",
+		prevEl: ".house-slider__swiper-button-prev"
+	},
+});
+
+const swiper2 = new Swiper(".mySwiper2", {
+	grabCursor: true,
+	//loop: true,
+	watchOverflow: true,
+	watchSlidesVisibility: true,
+	watchSlidesProgress: true,
+	preventInteractionOnTransition: true,
+	direction: "horizontal",
+	spaceBetween: 10,
+	// navigation: {
+	// 	nextEl: ".swiper-button-next",
+	// 	prevEl: ".swiper-button-prev"
+	// },
+	thumbs: {
+		swiper: swiper
+	}
+});
+if (document.querySelectorAll('.MyResultsPreviewSwiper')) {
+
+	MyResultsPreviewSwiper = new Swiper('.MyResultsPreviewSwiper', {
+		direction: 'horizontal',
+		loop: true,
+		preventClicks: false,
+		grabCursor: true,
+		preventClicksPropagation: false,
+		pagination: {
+			clickable: true,
+			el: ".swiper-pagination",
+		},
+
+	});
+}
 if (document.querySelector('.myOfferSwiper')) {
 
 	MyOfferSwiper = new Swiper('.myOfferSwiper', {
@@ -99,4 +146,5 @@ function getSpaceValue() {
 	}
 }
 
-export { MyOfferSwiper, MyProjectsSwiper, MyHeroSwiper }
+export { MyOfferSwiper, MyProjectsSwiper, MyHeroSwiper, MyResultsPreviewSwiper }
+

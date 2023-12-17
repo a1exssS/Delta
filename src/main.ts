@@ -1,3 +1,7 @@
 import './styles/index.scss'
 import './components/swiper'
 import './components/menu'
+import './components/dropdown'
+import './components/rangeInput'
+import './components/uncheckCheckbox'
+import './components/filterMenu'
