@@ -1,3 +1,10 @@
+.hvr {
+
+	@media (max-width:991px) {
+		display: none;
+	}
+}
+
 .hvr__images {
 	position: relative;
 }
@@ -22,22 +29,34 @@
 
 .image {
 	display: block;
+	height: 320px;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+
+	@media (max-width:991px) {
+		height: 240px;
+	}
 }
 
 .hvr__dots {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: absolute;
+	bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .hvr__dot {
-	width: 5px;
-	height: 5px;
+	width: 7px;
+	height: 7px;
 	margin: 10px 2px 0;
 	border-radius: 50%;
-	background: #d6dbe0;
+	background: var(--white-bg-color);
 }
 
 .hvr__dot--active {
-	background: #000;
+	background: var(--black-bg-color);
 }

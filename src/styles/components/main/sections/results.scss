@@ -47,6 +47,13 @@
 		&:first-child {
 			overflow: hidden;
 			position: relative;
+			height: 320px;
+			width: 100%;
+			overflow: hidden;
+
+			@media (max-width:991px) {
+				height: 240px;
+			}
 
 			&::before {
 				content: '';
@@ -102,6 +109,14 @@
 
 		@media (max-width:991px) {
 			font-size: 24px;
+		}
+	}
+
+	&__swiper {
+		display: none !important;
+
+		@media (max-width:991px) {
+			display: block !important;
 		}
 	}
 
