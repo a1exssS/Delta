@@ -46,3 +46,10 @@ document.addEventListener('click', (e) => {
 
 	handleResize();
 });
+
+document.addEventListener('click', (e) => {
+	if (e.target.matches("[data-dropdown-button]")) {
+		let currentDropdown = e.target.closest('[data-dropdown-card]');
+		currentDropdown.classList.toggle('active');
+	}
+})

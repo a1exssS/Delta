@@ -138,7 +138,7 @@
 			position: relative;
 			transition: .1s ease;
 			position: fixed;
-			top: 115px;
+			top: 120px;
 			left: 0;
 			right: 0;
 			bottom: 0;
@@ -453,6 +453,7 @@
 
 	&__link {
 		display: flex;
+		width: 100%;
 		text-wrap: nowrap;
 		flex-wrap: nowrap;
 		display: inline-block;

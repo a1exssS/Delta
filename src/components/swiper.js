@@ -7,11 +7,13 @@ let MyOfferSwiper;
 let MyProjectsSwiper;
 let MyHeroSwiper;
 let MyResultsPreviewSwiper;
-const swiper = new Swiper(".mySwiper1", {
-	direction: "vertical",
-	//loop: true,
-	spaceBetween: 10,
-	slidesPerView: 4,
+let MyGalery;
+let MyThumbnail;
+
+MyGalery = new Swiper(".house-slider__swiper-galery", {
+	direction: getPositionValue(),
+	spaceBetween: 7,
+	slidesPerView: getGaleriesValue(),
 
 	freeMode: false,
 	watchSlidesProgress: true,
@@ -21,8 +23,7 @@ const swiper = new Swiper(".mySwiper1", {
 	},
 });
 
-const swiper2 = new Swiper(".mySwiper2", {
-	grabCursor: true,
+MyThumbnail = new Swiper(".house-slider__swiper-thumbnail", {
 	//loop: true,
 	watchOverflow: true,
 	watchSlidesVisibility: true,
@@ -30,12 +31,12 @@ const swiper2 = new Swiper(".mySwiper2", {
 	preventInteractionOnTransition: true,
 	direction: "horizontal",
 	spaceBetween: 10,
-	// navigation: {
-	// 	nextEl: ".swiper-button-next",
-	// 	prevEl: ".swiper-button-prev"
-	// },
+	navigation: {
+		nextEl: ".house-slider__button-next",
+		prevEl: ".house-slider__button-prev"
+	},
 	thumbs: {
-		swiper: swiper
+		swiper: MyGalery
 	}
 });
 if (document.querySelectorAll('.MyResultsPreviewSwiper')) {
@@ -108,8 +109,24 @@ window.addEventListener('resize', () => {
 		MyProjectsSwiper.params.spaceBetween = getSpaceValue()
 		MyProjectsSwiper.update();
 	}
+	if (MyGalery) {
+		MyGalery.params.direction = getPositionValue();
+		MyGalery.params.slidesPerView = getGaleriesValue();
+		MyGalery.params.thumbs = {
+			swiper: MyGalery
+		}
+		MyGalery.update();
+	}
 
 });
+
+function getPositionValue() {
+	return window.innerWidth <= 1500 ? "horizontal" : "vertical";
+}
+function getGaleriesValue() {
+	return window.innerWidth <= 739 && window.innerWidth > 539 ? 3 : window.innerWidth <= 539 ? 2 : 4;
+}
+
 
 function getWidthValue() {
 	if (window.innerWidth <= 739) {
@@ -146,5 +163,5 @@ function getSpaceValue() {
 	}
 }
 
-export { MyOfferSwiper, MyProjectsSwiper, MyHeroSwiper, MyResultsPreviewSwiper }
+export { MyOfferSwiper, MyProjectsSwiper, MyHeroSwiper, MyResultsPreviewSwiper, MyThumbnail, MyGalery }
 

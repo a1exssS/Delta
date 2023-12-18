@@ -3,15 +3,33 @@
 	padding: 140px 0;
 	background-color: var(--beige-100-bg-color);
 
+	@media (max-width:1500px) {
+		padding: 100px 0;
+	}
+
+	@media (max-width:991px) {
+		padding: 80px 0;
+	}
+
+	@media (max-width:739px) {
+		padding: 60px 0;
+	}
+
 	&__container {}
 
 	&__title {
 		background: var(--gradient-color);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		margin-bottom: 50px;
 
 		@media (max-width:1300px) {
+			margin-bottom: 40px;
 			font-size: 40px;
+		}
+
+		@media (max-width:739px) {
+			margin-bottom: 30px;
 		}
 
 		@media (max-width:575px) {
@@ -21,11 +39,14 @@
 	}
 
 	&__box {
-		margin-top: 50px;
 		display: flex;
 		flex-direction: column;
 		align-items: start;
 		max-width: 60%;
+
+		@media (max-width:1500px) {
+			max-width: 100%;
+		}
 	}
 
 	&__text {}
