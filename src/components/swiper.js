@@ -10,35 +10,38 @@ let MyResultsPreviewSwiper;
 let MyGalery;
 let MyThumbnail;
 
-MyGalery = new Swiper(".house-slider__swiper-galery", {
-	direction: getPositionValue(),
-	spaceBetween: 7,
-	slidesPerView: getGaleriesValue(),
+if (document.querySelector('.house-slider__swiper-galery')) {
+	MyGalery = new Swiper(".house-slider__swiper-galery", {
+		direction: getPositionValue(),
+		spaceBetween: 7,
+		slidesPerView: getGaleriesValue(),
 
-	freeMode: false,
-	watchSlidesProgress: true,
-	navigation: {
-		nextEl: ".house-slider__swiper-button-next",
-		prevEl: ".house-slider__swiper-button-prev"
-	},
-});
+		freeMode: false,
+		watchSlidesProgress: true,
+		navigation: {
+			nextEl: ".house-slider__swiper-button-next",
+			prevEl: ".house-slider__swiper-button-prev"
+		},
+	});
 
-MyThumbnail = new Swiper(".house-slider__swiper-thumbnail", {
-	//loop: true,
-	watchOverflow: true,
-	watchSlidesVisibility: true,
-	watchSlidesProgress: true,
-	preventInteractionOnTransition: true,
-	direction: "horizontal",
-	spaceBetween: 10,
-	navigation: {
-		nextEl: ".house-slider__button-next",
-		prevEl: ".house-slider__button-prev"
-	},
-	thumbs: {
-		swiper: MyGalery
-	}
-});
+	MyThumbnail = new Swiper(".house-slider__swiper-thumbnail", {
+		//loop: true,
+		watchOverflow: true,
+		watchSlidesVisibility: true,
+		watchSlidesProgress: true,
+		preventInteractionOnTransition: true,
+		direction: "horizontal",
+		spaceBetween: 10,
+		navigation: {
+			nextEl: ".house-slider__button-next",
+			prevEl: ".house-slider__button-prev"
+		},
+		thumbs: {
+			swiper: MyGalery
+		}
+	});
+
+}
 if (document.querySelectorAll('.MyResultsPreviewSwiper')) {
 
 	MyResultsPreviewSwiper = new Swiper('.MyResultsPreviewSwiper', {

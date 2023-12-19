@@ -99,7 +99,7 @@
 			height: 10px;
 			transform: rotate(45deg);
 			border-bottom: 1px solid var(--bright-brown-border-color);
-			background-color: var(--white-bg-color);
+			background-color: var(--beige-100-bg-color);
 		}
 
 		&::after {
@@ -112,7 +112,7 @@
 			height: 10px;
 			transform: rotate(45deg);
 			border-left: 1px solid var(--bright-brown-border-color);
-			background-color: var(--white-bg-color);
+			background-color: var(--beige-100-bg-color);
 		}
 
 		&:not(:last-child) {
@@ -167,7 +167,7 @@
 			height: 0;
 			border-style: solid;
 			border-width: 10px 0px 10px 10px;
-			border-color: transparent transparent var(--white-bg-color) transparent
+			border-color: transparent transparent var(--beige-100-bg-color) transparent
 		}
 
 		&::after {
@@ -179,7 +179,7 @@
 			height: 0;
 			border-style: solid;
 			border-width: 10px 10px 10px 0px;
-			border-color: var(--white-bg-color) transparent transparent transparent
+			border-color: var(--beige-100-bg-color) transparent transparent transparent
 		}
 
 	}

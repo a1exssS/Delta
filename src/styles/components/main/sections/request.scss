@@ -169,6 +169,15 @@
 		@media (max-width:1500px) {
 			font-size: 16px;
 		}
+
+		&::placeholder {
+			color: var(--bright-beige-text-color);
+			opacity: 1;
+		}
+
+		&::-ms-input-placeholder {
+			color: var(--bright-beige-text-color);
+		}
 	}
 
 	&__button {
@@ -214,13 +223,4 @@
 
 		}
 	}
-}
-
-::placeholder {
-	color: var(--bright-beige-text-color);
-	opacity: 1;
-}
-
-::-ms-input-placeholder {
-	color: var(--bright-beige-text-color);
 }

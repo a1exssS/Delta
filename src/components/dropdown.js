@@ -48,7 +48,7 @@ document.addEventListener('click', (e) => {
 });
 
 document.addEventListener('click', (e) => {
-	if (e.target.matches("[data-dropdown-button]")) {
+	if (e.target.matches("[data-dropdown-button]") && e.target.closest('[data-dropdown-card]')) {
 		let currentDropdown = e.target.closest('[data-dropdown-card]');
 		currentDropdown.classList.toggle('active');
 	}

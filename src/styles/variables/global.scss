@@ -179,7 +179,11 @@
 }
 
 .container {
-	max-width: calc(100% - 200px);
+	max-width: 1720px;
+
+	@media (max-width:1920px) {
+		max-width: calc(100% - 200px);
+	}
 
 	@media (max-width:1350px) {
 		max-width: calc(100% - 80px);

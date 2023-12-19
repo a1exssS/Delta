@@ -124,7 +124,7 @@
 			height: 0;
 			border-style: solid;
 			border-width: 10px 0px 10px 10px;
-			border-color: transparent transparent var(--white-bg-color) transparent
+			border-color: transparent transparent var(--beige-100-bg-color) transparent
 		}
 
 		&:first-child::after {
@@ -136,7 +136,7 @@
 			height: 0;
 			border-style: solid;
 			border-width: 10px 10px 10px 0px;
-			border-color: var(--white-bg-color) transparent transparent transparent
+			border-color: var(--beige-100-bg-color) transparent transparent transparent
 		}
 
 		&:last-child::before {
@@ -148,7 +148,7 @@
 			height: 0;
 			border-style: solid;
 			border-width: 10px 0px 10px 10px;
-			border-color: transparent transparent var(--white-bg-color) transparent
+			border-color: transparent transparent var(--beige-100-bg-color) transparent
 		}
 
 		&:last-child::after {
@@ -160,7 +160,7 @@
 			height: 0;
 			border-style: solid;
 			border-width: 10px 10px 10px 0px;
-			border-color: var(--white-bg-color) transparent transparent transparent
+			border-color: var(--beige-100-bg-color) transparent transparent transparent
 		}
 
 		transition: .2s linear;

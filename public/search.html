@@ -13,11 +13,11 @@
 <body>
 	<header class="header">
 		<div class="header__container container">
+
 			<a href="/" class="header__logo-link">
 				<picture>
-					<source loading="lazy" srcset="../src/Images/logo-mini.png " media="(max-width: 930px)" />
-					<source loading="lazy" srcset="../src/Images/logo.webp " media="(min-width: 930px)" />
-					<img loading="lazy" src="../src/Images/logo.png" class="header__logo" alt="MDN" />
+					<source loading="lazy" srcset="../src/Images/logo-mini.svg" media="(max-width: 930px)" />
+					<img loading="lazy" src="../src/Images/logo.svg" class="header__logo" alt="MDN" />
 				</picture>
 			</a>
 			<div class="header__items" data-menu="close">
@@ -54,7 +54,7 @@
 						</a>
 					</div>
 					<div class="header__item">
-						<button class="header__button click-md-bold">Заказать звонок</button>
+						<button header-overlay class="header__button click-md-bold">Заказать звонок</button>
 					</div>
 				</div>
 				<nav class="header__navigation">
@@ -80,16 +80,16 @@
 				</button>
 			</div>
 		</div>
-		<nav class="navigation">
-			<div class="container navigation__container">
-				<a href="" class="navigation__link text-md">Проекты</a>
-				<a href="" class="navigation__link text-md">Акции</a>
-				<a href="" class="navigation__link text-md">Построенные дома</a>
-				<a href="" class="navigation__link text-md">О компании</a>
-				<a href="" class="navigation__link text-md">Контакты</a>
-			</div>
-		</nav>
 	</header>
+	<nav class="navigation">
+		<div class="container navigation__container">
+			<a href="" class="navigation__link text-md">Проекты</a>
+			<a href="" class="navigation__link text-md">Акции</a>
+			<a href="" class="navigation__link text-md">Построенные дома</a>
+			<a href="" class="navigation__link text-md">О компании</a>
+			<a href="" class="navigation__link text-md">Контакты</a>
+		</div>
+	</nav>
 	<main class="main main__search">
 		<section class="page-navigation">
 			<div class="container page-navigation__container">
@@ -157,9 +157,8 @@
 							<div class="filter__options-item" data-dropdown>
 								<div class="filter__option-holder">
 									<button type="button" class="filter__option" data-dropdown-button>
-										<span class="filter__option-name text-sm-bold" data-dropdown-button>Размер
-											<span class="text-sm"></span>
-										</span>
+										<span class="filter__option-name text-sm-bold" data-dropdown-button>Размер<span
+												class="text-sm"></span></span>
 										<svg width="24px" height="24px" data-dropdown-button>
 											<use xlink:href="../src/Images/sprite.svg#arrow-small-up" />
 										</svg>
@@ -170,7 +169,7 @@
 										</svg>
 									</button>
 								</div>
-								<div class="filter__dropdown">
+								<div class="filter__dropdown filter__dropdown_gradient">
 									<div class="filter__dropdown-box">
 										<div class="filter__dropdown-item">
 											<label for="size1" class="filter__dropdown-label text-sm-bold">
@@ -231,38 +230,25 @@
 											<use xlink:href="../src/Images/sprite.svg#arrow-small-up" />
 										</svg>
 									</button>
-									<button type="button" class="filter__reset-button" data-reset-button>
-										<svg width="16px" height="16px" data-reset-button>
-											<use xlink:href="../src/Images/sprite.svg#small-close" />
-										</svg>
-									</button>
 								</div>
 								<div class="filter__dropdown">
 									<div class="filter__dropdown-box">
 										<div class="filter__dropdown-item">
 											<label for="layer1" class="filter__dropdown-label text-sm-bold">
 												<input id="layer1" data-size-input type="checkbox" class="filter__dropdown-input">
-												1 <span class="text-sm">(16)</span>
+												1 этаж <span class="text-sm">(16)</span>
 											</label>
 											<label for="layer2" class="filter__dropdown-label text-sm-bold">
 												<input id="layer2" data-size-input type="checkbox" class="filter__dropdown-input">
-												2 <span class="text-sm">(16)</span>
+												1 этаж + мансарда <span class="text-sm">(16)</span>
 											</label>
 											<label for="layer3" class="filter__dropdown-label text-sm-bold">
 												<input id="layer3" data-size-input type="checkbox" class="filter__dropdown-input">
-												3 <span class="text-sm">(16)</span>
+												1.5 этажа <span class="text-sm">(16)</span>
 											</label>
 											<label for="layer4" class="filter__dropdown-label text-sm-bold">
 												<input id="layer4" data-size-input type="checkbox" class="filter__dropdown-input">
-												4 <span class="text-sm">(16)</span>
-											</label>
-											<label for="layer5" class="filter__dropdown-label text-sm-bold">
-												<input id="layer5" data-size-input type="checkbox" class="filter__dropdown-input">
-												5 <span class="text-sm">(16)</span>
-											</label>
-											<label for="layer6" class="filter__dropdown-label text-sm-bold">
-												<input id="layer6" data-size-input type="checkbox" class="filter__dropdown-input">
-												6 <span class="text-sm">(16)</span>
+												2 этажа <span class="text-sm">(16)</span>
 											</label>
 										</div>
 									</div>
@@ -322,9 +308,9 @@
 									<div class="filter__dropdown-box">
 										<div class="filter__dropdown-item">
 											<div class="filter__dropdown-range-field filter__dropdown-range-price">
-												<input type="number" value="1000000"
+												<input type="number" value="1470000"
 													class="filter__dropdown-range-number filter__dropdown-number-min range-number-price-min">
-												<input type="number" value="60000000"
+												<input type="number" value="22690000"
 													class="filter__dropdown-range-number filter__dropdown-number-max range-number-price-max">
 											</div>
 											<div class="filter__dropdown-slider filter__dropdown-slider-price">
@@ -334,9 +320,9 @@
 											</div>
 											<div class="filter__dropdown-range-inputs filter__dropdown-inputs-price">
 												<input type="range" class="filter__dropdown-range-input-min range-price-min"
-													min="1000000" max="60000000" value="1000000" step="1000">
+													min="1470000" max="22690000" value="1470000" step="1000">
 												<input type="range" class="filter__dropdown-range-input-max range-price-max"
-													min="1000000" max="60000000" value="60000000" step="1000">
+													min="1470000" max="22690000" value="22690000" step="1000">
 											</div>
 
 										</div>
@@ -355,11 +341,6 @@
 												class="text-sm"></span></span>
 										<svg width="24px" height="24px" data-dropdown-button>
 											<use xlink:href="../src/Images/sprite.svg#arrow-small-up" />
-										</svg>
-									</button>
-									<button type="button" class="filter__reset-button" data-reset-button>
-										<svg width="16px" height="16px" data-reset-button>
-											<use xlink:href="../src/Images/sprite.svg#small-close" />
 										</svg>
 									</button>
 								</div>
@@ -382,30 +363,6 @@
 												<input id="room4" data-size-input type="checkbox" class="filter__dropdown-input">
 												4 <span class="text-sm">(16)</span>
 											</label>
-											<label for="room5" class="filter__dropdown-label text-sm-bold">
-												<input id="room5" data-size-input type="checkbox" class="filter__dropdown-input">
-												5 <span class="text-sm">(16)</span>
-											</label>
-											<label for="room6" class="filter__dropdown-label text-sm-bold">
-												<input id="room6" data-size-input type="checkbox" class="filter__dropdown-input">
-												6 <span class="text-sm">(16)</span>
-											</label>
-											<label for="room7" class="filter__dropdown-label text-sm-bold">
-												<input id="room7" data-size-input type="checkbox" class="filter__dropdown-input">
-												7 <span class="text-sm">(16)</span>
-											</label>
-											<label for="room8" class="filter__dropdown-label text-sm-bold">
-												<input id="room8" data-size-input type="checkbox" class="filter__dropdown-input">
-												8 <span class="text-sm">(16)</span>
-											</label>
-											<label for="room9" class="filter__dropdown-label text-sm-bold">
-												<input id="room9" data-size-input type="checkbox" class="filter__dropdown-input">
-												9 <span class="text-sm">(16)</span>
-											</label>
-											<label for="room10" class="filter__dropdown-label text-sm-bold">
-												<input id="room10" data-size-input type="checkbox" class="filter__dropdown-input">
-												10 <span class="text-sm">(16)</span>
-											</label>
 										</div>
 									</div>
 									<div class="filter__dropdown-box">
@@ -424,54 +381,25 @@
 											<use xlink:href="../src/Images/sprite.svg#arrow-small-up" />
 										</svg>
 									</button>
-									<button type="button" class="filter__reset-button" data-reset-button>
-										<svg width="16px" height="16px" data-reset-button>
-											<use xlink:href="../src/Images/sprite.svg#small-close" />
-										</svg>
-									</button>
 								</div>
 								<div class="filter__dropdown">
 									<div class="filter__dropdown-box">
 										<div class="filter__dropdown-item">
 											<label for="option1" class="filter__dropdown-label text-sm-bold">
 												<input id="option1" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 1 <span class="text-sm">(16)</span>
+												Эркер <span class="text-sm">(16)</span>
 											</label>
 											<label for="option2" class="filter__dropdown-label text-sm-bold">
 												<input id="option2" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 2 <span class="text-sm">(16)</span>
+												Веранда <span class="text-sm">(16)</span>
 											</label>
 											<label for="option3" class="filter__dropdown-label text-sm-bold">
 												<input id="option3" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 3 <span class="text-sm">(16)</span>
+												Балкон <span class="text-sm">(16)</span>
 											</label>
 											<label for="option4" class="filter__dropdown-label text-sm-bold">
 												<input id="option4" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 4 <span class="text-sm">(16)</span>
-											</label>
-											<label for="option5" class="filter__dropdown-label text-sm-bold">
-												<input id="option5" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 5 <span class="text-sm">(16)</span>
-											</label>
-											<label for="option6" class="filter__dropdown-label text-sm-bold">
-												<input id="option6" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 6 <span class="text-sm">(16)</span>
-											</label>
-											<label for="option6" class="filter__dropdown-label text-sm-bold">
-												<input id="option6" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 7 <span class="text-sm">(16)</span>
-											</label>
-											<label for="option6" class="filter__dropdown-label text-sm-bold">
-												<input id="option6" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 8 <span class="text-sm">(16)</span>
-											</label>
-											<label for="option6" class="filter__dropdown-label text-sm-bold">
-												<input id="option6" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 9 <span class="text-sm">(16)</span>
-											</label>
-											<label for="option6" class="filter__dropdown-label text-sm-bold">
-												<input id="option6" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 10 <span class="text-sm">(16)</span>
+												Терраса <span class="text-sm">(16)</span>
 											</label>
 										</div>
 									</div>
@@ -1474,12 +1402,9 @@
 
 				<div class="footer__item">
 					<a href="" class="footer__image-link">
-						<picture>
-							<source loading="lazy" srcset="../src/Images/Logo_footer.webp" />
-							<img loading="lazy" src="../src/Images/Logo_footer.png" alt="" class="footer__image">
-						</picture>
+						<img loading="lazy" src="../src/Images/logo-footer.svg" alt="" class="footer__image">
 					</a>
-					<div class="footer__built-house">
+					<div class="footer__contacts">
 						<a href="" class="footer__phone-link h3-md-bold">8 921 204 51 11</a>
 						<a href="" class="footer__item-link footer__item-email text-md">info@vasilekstroy.ru</a>
 					</div>
@@ -1539,8 +1464,34 @@
 			</div>
 		</div>
 	</footer>
-
-
+	<div class="overlay-box">
+		<div class="overlay" id="header-overlay">
+			<div class="popup">
+				<button class="overlay__close-button">
+					<svg width="32px" height="32px">
+						<use xlink:href="../src/Images/sprite.svg#close" />
+					</svg>
+				</button>
+				<h3 class="h3-lg-bold overlay__title">Заявка на обратный звонок</h3>
+				<span class="overlay__text text-md">Заполните форму, мы перезвоним Вам в ближайшее время</span>
+				<form action="" class="overlay__form">
+					<label for="overlay-name">
+						<input id="overlay-name" placeholder="Ваше имя" name="overlay-name" type="text"
+							class="overlay__input">
+					</label>
+					<label for="overlay-phone">
+						<input id="overlay-phone" placeholder="+7 999 999 99 99 *" name="overlay-phone" type="text"
+							class="overlay__input">
+					</label>
+					<button type="submit" class="overlay__button click-sm-bold">Отправить</button>
+				</form>
+				<span class="overlay__policy">
+					Отправляя заявку, вы соглашаетесь с
+					<a href="" class="overlay__link">Политикой обработки персональных данных.</a>
+				</span>
+			</div>
+		</div>
+	</div>
 </body>
 <script type="module" src="../src/main.ts"></script>
 

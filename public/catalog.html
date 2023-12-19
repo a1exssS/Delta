@@ -16,9 +16,8 @@
 
 			<a href="/" class="header__logo-link">
 				<picture>
-					<source loading="lazy" srcset="../src/Images/logo-mini.png " media="(max-width: 930px)" />
-					<source loading="lazy" srcset="../src/Images/logo.webp " media="(min-width: 930px)" />
-					<img loading="lazy" src="../src/Images/logo.png" class="header__logo" alt="MDN" />
+					<source loading="lazy" srcset="../src/Images/logo-mini.svg" media="(max-width: 930px)" />
+					<img loading="lazy" src="../src/Images/logo.svg" class="header__logo" alt="MDN" />
 				</picture>
 			</a>
 			<div class="header__items" data-menu="close">
@@ -55,7 +54,7 @@
 						</a>
 					</div>
 					<div class="header__item">
-						<button class="header__button click-md-bold">Заказать звонок</button>
+						<button header-overlay class="header__button click-md-bold">Заказать звонок</button>
 					</div>
 				</div>
 				<nav class="header__navigation">
@@ -81,16 +80,16 @@
 				</button>
 			</div>
 		</div>
-		<nav class="navigation">
-			<div class="container navigation__container">
-				<a href="" class="navigation__link text-md">Проекты</a>
-				<a href="" class="navigation__link text-md">Акции</a>
-				<a href="" class="navigation__link text-md">Построенные дома</a>
-				<a href="" class="navigation__link text-md">О компании</a>
-				<a href="" class="navigation__link text-md">Контакты</a>
-			</div>
-		</nav>
 	</header>
+	<nav class="navigation">
+		<div class="container navigation__container">
+			<a href="" class="navigation__link text-md">Проекты</a>
+			<a href="" class="navigation__link text-md">Акции</a>
+			<a href="" class="navigation__link text-md">Построенные дома</a>
+			<a href="" class="navigation__link text-md">О компании</a>
+			<a href="" class="navigation__link text-md">Контакты</a>
+		</div>
+	</nav>
 	<main class="main main__catalog">
 		<section class="page-navigation">
 			<div class="container page-navigation__container">
@@ -145,10 +144,7 @@
 
 				<div class="footer__item">
 					<a href="" class="footer__image-link">
-						<picture>
-							<source loading="lazy" srcset="../src/Images/Logo_footer.webp" />
-							<img loading="lazy" src="../src/Images/Logo_footer.png" alt="" class="footer__image">
-						</picture>
+						<img loading="lazy" src="../src/Images/logo-footer.svg" alt="" class="footer__image">
 					</a>
 					<div class="footer__contacts">
 						<a href="" class="footer__phone-link h3-md-bold">8 921 204 51 11</a>
@@ -210,7 +206,34 @@
 			</div>
 		</div>
 	</footer>
-
+	<div class="overlay-box">
+		<div class="overlay" id="header-overlay">
+			<div class="popup">
+				<button class="overlay__close-button">
+					<svg width="32px" height="32px">
+						<use xlink:href="../src/Images/sprite.svg#close" />
+					</svg>
+				</button>
+				<h3 class="h3-lg-bold overlay__title">Заявка на обратный звонок</h3>
+				<span class="overlay__text text-md">Заполните форму, мы перезвоним Вам в ближайшее время</span>
+				<form action="" class="overlay__form">
+					<label for="overlay-name">
+						<input id="overlay-name" placeholder="Ваше имя" name="overlay-name" type="text"
+							class="overlay__input">
+					</label>
+					<label for="overlay-phone">
+						<input id="overlay-phone" placeholder="+7 999 999 99 99 *" name="overlay-phone" type="text"
+							class="overlay__input">
+					</label>
+					<button type="submit" class="overlay__button click-sm-bold">Отправить</button>
+				</form>
+				<span class="overlay__policy">
+					Отправляя заявку, вы соглашаетесь с
+					<a href="" class="overlay__link">Политикой обработки персональных данных.</a>
+				</span>
+			</div>
+		</div>
+	</div>
 
 </body>
 <script type="module" src="../src/main.ts"></script>
