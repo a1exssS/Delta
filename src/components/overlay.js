@@ -1,6 +1,7 @@
 
 const closeButton = document.querySelectorAll('.overlay__close-button')
 const overlayBox = document.querySelector('.overlay-box')
+overlayBox.style.display = 'none'
 
 if (document.querySelector('[consultation-overlay]')) {
 	const openButton = document.querySelector('[consultation-overlay]');

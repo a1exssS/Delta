@@ -29,7 +29,7 @@ if (document.querySelector('.filter__dropdown')) {
 		}
 	})
 	document.addEventListener("DOMContentLoaded", () => {
-		const element = document.querySelector(".filter__dropdown-item"); // замените на ваш класс или id элемента
+		const element = document.querySelector(".filter__dropdown-item");
 		const children = Array.from(element.children);
 		const showAllButton = document.createElement("button");
 		showAllButton.setAttribute('type', 'button')

@@ -57,6 +57,7 @@
 			margin-top: 40px;
 			grid-template-columns: 1fr;
 		}
+
 	}
 
 	&__item {
@@ -79,6 +80,7 @@
 
 
 		&:last-child {
+
 			h3 {
 				span {
 
@@ -186,6 +188,7 @@
 			}
 
 			&:nth-child(5) {
+
 				h3 {
 					span {
 						&::after {

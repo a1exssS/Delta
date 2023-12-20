@@ -16,10 +16,10 @@ if (document.querySelector('.filter__dropdown-inputs-size')) {
 			if ((maxVal - minVal >= sizeGap) && maxVal <= 400 && minVal >= 35) {
 				if (e.target.className === "filter__dropdown-range-number filter__dropdown-number-min range-number-size-min") {
 					rangeSizeInput[0].value = minVal
-					sizeProgress.style.left = (minVal / rangeSizeInput[0].max) * 100 - 4.5 + "%"
+					sizeProgress.style.left = (minVal / rangeSizeInput[0].max) * 100 + "%"
 				} else {
 					rangeSizeInput[1].value = maxVal
-					sizeProgress.style.right = 100 - (maxVal / rangeSizeInput[1].max) * 100 + 4.5 + "%"
+					sizeProgress.style.right = 100 - (maxVal / rangeSizeInput[1].max) * 100 + "%"
 				}
 			}
 
@@ -40,8 +40,9 @@ if (document.querySelector('.filter__dropdown-inputs-size')) {
 			else {
 				inputSizeField[0].value = minVal
 				inputSizeField[1].value = maxVal
-				sizeProgress.style.left = (minVal / rangeSizeInput[0].max) * 100 - 4.5 + "%"
-				sizeProgress.style.right = 100 - (maxVal / rangeSizeInput[1].max) * 100 + 4.5 + "%"
+				console.log(100 - (maxVal / rangeSizeInput[1].max) * 100 + 3 + "%")
+				sizeProgress.style.left = (minVal / rangeSizeInput[0].max) * 100 - 7 + "%"
+				sizeProgress.style.right = 100 - (maxVal / rangeSizeInput[1].max) * 100 + 2 + "%"
 			}
 
 		})

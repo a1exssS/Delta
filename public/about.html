@@ -17,7 +17,7 @@
 			<a href="/" class="header__logo-link">
 				<picture>
 					<source loading="lazy" srcset="../src/Images/logo-mini.svg" media="(max-width: 930px)" />
-					<img loading="lazy" src="../src/Images/logo.svg" class="header__logo" alt="MDN" />
+					<img loading="lazy" src="../src/Images/logo.svg" class="header__logo" alt="Логотип" />
 				</picture>
 			</a>
 			<div class="header__items" data-menu="close">
@@ -136,7 +136,7 @@
 						<picture>
 							<source loading="lazy" srcset="../src/Images/about-company_img.webp" />
 							<img loading="lazy" src="../src/Images/about-company_img.jpg" class="about-company__image"
-								alt="MDN" />
+								alt="изображение из о компании" />
 						</picture>
 					</div>
 				</div>
@@ -208,31 +208,36 @@
 					<div class="advancements__item">
 						<div class="advancements__item-image">
 
-							<img loading="lazy" src="../src/Images/advancements_icon1.svg" alt="" class="advancements__image">
+							<img loading="lazy" src="../src/Images/advancements_icon1.svg"
+								alt="изображение иконок наших приемуществ" class="advancements__image">
 						</div>
 						<span class="advancements__text text-lg">Собственное производство</span>
 					</div>
 					<div class="advancements__item">
 						<div class="advancements__item-image">
-							<img loading="lazy" src="../src/Images/advancements_icon2.svg" alt="" class="advancements__image">
+							<img loading="lazy" src="../src/Images/advancements_icon2.svg"
+								alt="изображение иконок наших приемуществ" class="advancements__image">
 						</div>
 						<span class="advancements__text text-lg">Лес только зимней заготовки</span>
 					</div>
 					<div class="advancements__item">
 						<div class="advancements__item-image">
-							<img loading="lazy" src="../src/Images/advancements_icon3.svg" alt="" class="advancements__image">
+							<img loading="lazy" src="../src/Images/advancements_icon3.svg"
+								alt="изображение иконок наших приемуществ" class="advancements__image">
 						</div>
 						<span class="advancements__text text-lg">Экологически чистая древесина</span>
 					</div>
 					<div class="advancements__item">
 						<div class="advancements__item-image">
-							<img loading="lazy" src="../src/Images/advancements_icon4.svg" alt="" class="advancements__image">
+							<img loading="lazy" src="../src/Images/advancements_icon4.svg"
+								alt="изображение иконок наших приемуществ" class="advancements__image">
 						</div>
 						<span class="advancements__text text-lg">Фиксированные цены</span>
 					</div>
 					<div class="advancements__item">
 						<div class="advancements__item-image">
-							<img loading="lazy" src="../src/Images/advancements_icon5.svg" alt="" class="advancements__image">
+							<img loading="lazy" src="../src/Images/advancements_icon5.svg"
+								alt="изображение иконок наших приемуществ" class="advancements__image">
 						</div>
 						<span class="advancements__text text-lg">Гарантия на дом в договоре</span>
 					</div>
@@ -267,7 +272,8 @@
 					<picture>
 						<source loading="lazy" srcset="../src/Images/get-to-know_image.webp" />
 						<source loading="lazy" srcset="../src/Images/get-to-know_image.jpg" />
-						<img loading="lazy" src="../src/Images/get-to-know_image.png" alt="" class="get-to-know__image">
+						<img loading="lazy" src="../src/Images/get-to-know_image.png" alt="изображение из узнать больше"
+							class="get-to-know__image">
 					</picture>
 				</div>
 			</div>
@@ -392,7 +398,7 @@
 
 				<div class="footer__item">
 					<a href="" class="footer__image-link">
-						<img loading="lazy" src="../src/Images/logo-footer.svg" alt="" class="footer__image">
+						<img loading="lazy" src="../src/Images/logo-footer.svg" alt="Логотип" class="footer__image">
 					</a>
 					<div class="footer__contacts">
 						<a href="" class="footer__phone-link h3-md-bold">8 921 204 51 11</a>
@@ -456,29 +462,31 @@
 	</footer>
 	<div class="overlay-box">
 		<div class="overlay" id="header-overlay">
-			<div class="popup">
+			<div class="overlay__holder">
 				<button class="overlay__close-button">
 					<svg width="32px" height="32px">
 						<use xlink:href="../src/Images/sprite.svg#close" />
 					</svg>
 				</button>
-				<h3 class="h3-lg-bold overlay__title">Заявка на обратный звонок</h3>
-				<span class="overlay__text text-md">Заполните форму, мы перезвоним Вам в ближайшее время</span>
-				<form action="" class="overlay__form">
-					<label for="overlay-name">
-						<input id="overlay-name" placeholder="Ваше имя" name="overlay-name" type="text"
-							class="overlay__input">
-					</label>
-					<label for="overlay-phone">
-						<input id="overlay-phone" placeholder="+7 999 999 99 99 *" name="overlay-phone" type="text"
-							class="overlay__input">
-					</label>
-					<button type="submit" class="overlay__button click-sm-bold">Отправить</button>
-				</form>
-				<span class="overlay__policy">
-					Отправляя заявку, вы соглашаетесь с
-					<a href="" class="overlay__link">Политикой обработки персональных данных.</a>
-				</span>
+				<div class="popup">
+					<h3 class="h3-lg-bold overlay__title">Заявка на обратный звонок</h3>
+					<span class="overlay__text text-md">Заполните форму, мы перезвоним Вам в ближайшее время</span>
+					<form action="" class="overlay__form">
+						<label for="overlay-name">
+							<input id="overlay-name" placeholder="Ваше имя" name="overlay-name" type="text"
+								class="overlay__input">
+						</label>
+						<label for="overlay-phone">
+							<input id="overlay-phone" placeholder="+7 999 999 99 99 *" name="overlay-phone" type="text"
+								class="overlay__input">
+						</label>
+						<button type="submit" class="overlay__button click-sm-bold">Отправить</button>
+					</form>
+					<span class="overlay__policy">
+						Отправляя заявку, вы соглашаетесь с
+						<a href="" class="overlay__link">Политикой обработки персональных данных.</a>
+					</span>
+				</div>
 			</div>
 		</div>
 	</div>

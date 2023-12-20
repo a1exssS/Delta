@@ -1,6 +1,5 @@
 const navigation = document.querySelector('.navigation');
 let lastScrollTop = 199;
-
 window.addEventListener('scroll', () => {
 	let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 	if (scrollTop > lastScrollTop) {
@@ -11,4 +10,4 @@ window.addEventListener('scroll', () => {
 		navigation.classList.remove('navigation__move')
 		navigation.style.transform = "translateY(0px)"
 	}
-});
+})
