@@ -55,7 +55,7 @@
 		s.addEventListener("click", () => {
 			n && (n.dataset.menu = "close", bn(n), e.innerHTML = `
 					<svg width="32px" height="32px">
-						<use xlink:href="./sr/Images/sprite.svg#close" />
+						<use xlink:href="./src/Images/sprite.svg#close"/>
 					</svg>`)
 		})
 	}), e.addEventListener("click", r), t.addEventListener("click", r)
