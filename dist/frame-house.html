@@ -8,8 +8,8 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	<title>Document</title>
-	<script type="module" crossorigin src="./js/index.js"></script>
-	<link rel="stylesheet" crossorigin href="./css/index.css">
+	<script type="module" crossorigin src="./src/js/index-9G6_5U5f.js"></script>
+	<link rel="stylesheet" crossorigin href="./src/css/index-eNpVLg3K.css">
 </head>
 
 <body>
@@ -18,9 +18,8 @@
 
 			<a href="/" class="header__logo-link">
 				<picture>
-					<source loading="lazy" srcset="./Images/logo-mini.png " media="(max-width: 930px)" />
-					<source loading="lazy" srcset="./Images/logo.webp " media="(min-width: 930px)" />
-					<img loading="lazy" src="./Images/logo.png" class="header__logo" alt="MDN" />
+					<source loading="lazy" srcset="./src/Images/logo-mini.svg" media="(max-width: 930px)" />
+					<img loading="lazy" src="./src/Images/logo.svg" class="header__logo" alt="Логотип" />
 				</picture>
 			</a>
 			<div class="header__items" data-menu="close">
@@ -37,27 +36,27 @@
 					<div class="header__item header__item-socials">
 						<a href="" class="header__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#vk" />
+								<use xlink:href="./src/Images/sprite.svg#vk" />
 							</svg>
 						</a>
 						<a href="" class="header__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#instagram" />
+								<use xlink:href="./src/Images/sprite.svg#instagram" />
 							</svg>
 						</a>
 						<a href="" class="header__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#whatsapp" />
+								<use xlink:href="./src/Images/sprite.svg#whatsapp" />
 							</svg>
 						</a>
 						<a href="" class="header__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#viber" />
+								<use xlink:href="./src/Images/sprite.svg#viber" />
 							</svg>
 						</a>
 					</div>
 					<div class="header__item">
-						<button class="header__button click-md-bold">Заказать звонок</button>
+						<button header-overlay class="header__button click-md-bold">Заказать звонок</button>
 					</div>
 				</div>
 				<nav class="header__navigation">
@@ -73,33 +72,33 @@
 			<div class="header__button-item">
 				<a href="" class="header__phone-link">
 					<svg width="32px" height="32px">
-						<use xlink:href="./Images/sprite.svg#phone" />
+						<use xlink:href="./src/Images/sprite.svg#phone" />
 					</svg>
 				</a>
 				<button class="header__menu" data-menu-open data-menu-close>
 					<svg width="32px" height="32px" data-menu-open data-menu-close>
-						<use xlink:href="./Images/sprite.svg#menu" />
+						<use xlink:href="./src/Images/sprite.svg#menu" />
 					</svg>
 				</button>
 			</div>
 		</div>
-		<nav class="navigation">
-			<div class="container navigation__container">
-				<a href="" class="navigation__link text-md">Проекты</a>
-				<a href="" class="navigation__link text-md">Акции</a>
-				<a href="" class="navigation__link text-md">Построенные дома</a>
-				<a href="" class="navigation__link text-md">О компании</a>
-				<a href="" class="navigation__link text-md">Контакты</a>
-			</div>
-		</nav>
 	</header>
+	<nav class="navigation">
+		<div class="container navigation__container">
+			<a href="" class="navigation__link text-md">Проекты</a>
+			<a href="" class="navigation__link text-md">Акции</a>
+			<a href="" class="navigation__link text-md">Построенные дома</a>
+			<a href="" class="navigation__link text-md">О компании</a>
+			<a href="" class="navigation__link text-md">Контакты</a>
+		</div>
+	</nav>
 	<main class="main main__frame-house">
 		<section class="page-navigation">
 			<div class="container page-navigation__container">
 				<div class="page-navigation__item">
 					<a href="" class="page-navigation__link">
 						<svg width="24px" height="24px">
-							<use xlink:href="./Images/sprite.svg#house" />
+							<use xlink:href="./src/Images/sprite.svg#house" />
 						</svg>
 					</a>
 					<span class="text-sm">/</span>
@@ -198,14 +197,14 @@
 									<div class="house-slider__button-next">
 										<div class="house-slider__swiper2-button-next swiper-button-next">
 											<svg width="32px" height="32px">
-												<use xlink:href="./Images/sprite.svg#arrow-up" />
+												<use xlink:href="./src/Images/sprite.svg#arrow-up" />
 											</svg>
 										</div>
 									</div>
 									<div class="house-slider__button-prev">
 										<div class="house-slider__swiper2-button-prev swiper-button-prev">
 											<svg width="32px" height="32px">
-												<use xlink:href="./Images/sprite.svg#arrow-up" />
+												<use xlink:href="./src/Images/sprite.svg#arrow-up" />
 											</svg>
 										</div>
 									</div>
@@ -248,8 +247,9 @@
 
 						<div class="house-slider__info-box">
 							<h2 class="house-slider__info-title h3-lg-bold">от 1 026 000 ₽</h2>
-							<a href="" class="house-slider__info-link click-md-bold">Зафиксировать цену</a>
-							<a href="" class="house-slider__info-link click-md-bold">Получить консультацию</a>
+							<button project-overlay class="house-slider__info-link click-md-bold">Зафиксировать цену</button>
+							<button consultation-overlay class="house-slider__info-link click-md-bold">Получить
+								консультацию</button>
 						</div>
 					</div>
 				</div>
@@ -308,7 +308,7 @@
 						<button class="pricing__button text-md-bold" data-dropdown-button>
 							Основание
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="pricing__dropdown">
@@ -355,7 +355,7 @@
 						<button class="pricing__button text-md-bold" data-dropdown-button>
 							Стены и перегородки
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="pricing__dropdown">
@@ -410,7 +410,7 @@
 						<button class="pricing__button text-md-bold" data-dropdown-button>
 							Внутренняя отделка
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="pricing__dropdown">
@@ -465,7 +465,7 @@
 						<button class="pricing__button text-md-bold" data-dropdown-button>
 							Отделка фасада
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="pricing__dropdown">
@@ -544,7 +544,7 @@
 						<button class="pricing__button text-md-bold" data-dropdown-button>
 							Крыша
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="pricing__dropdown">
@@ -599,7 +599,7 @@
 						<button class="pricing__button text-md-bold" data-dropdown-button>
 							Утепление
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="pricing__dropdown">
@@ -654,7 +654,7 @@
 						<button class="pricing__button text-md-bold" data-dropdown-button>
 							Окна, двери
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="pricing__dropdown">
@@ -709,7 +709,7 @@
 						<button class="pricing__button text-md-bold" data-dropdown-button>
 							Лестница
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="pricing__dropdown">
@@ -764,7 +764,7 @@
 						<button class="pricing__button text-md-bold" data-dropdown-button>
 							Терраса, балкон
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="pricing__dropdown">
@@ -826,7 +826,7 @@
 						<button class="aditional-options__button text-md-bold" data-dropdown-button>
 							Отопление
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="aditional-options__dropdown">
@@ -851,7 +851,7 @@
 						<button class="aditional-options__button text-md-bold" data-dropdown-button>
 							Обработка каркаса
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="aditional-options__dropdown">
@@ -876,7 +876,7 @@
 						<button class="aditional-options__button text-md-bold" data-dropdown-button>
 							Дополнительное остекление
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="aditional-options__dropdown">
@@ -901,7 +901,7 @@
 						<button class="aditional-options__button text-md-bold" data-dropdown-button>
 							Утепление
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="aditional-options__dropdown">
@@ -926,7 +926,7 @@
 						<button class="aditional-options__button text-md-bold" data-dropdown-button>
 							Сауна
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="aditional-options__dropdown">
@@ -951,7 +951,7 @@
 						<button class="aditional-options__button text-md-bold" data-dropdown-button>
 							Свайно-винтовой фундамент
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="aditional-options__dropdown">
@@ -976,7 +976,7 @@
 						<button class="aditional-options__button text-md-bold" data-dropdown-button>
 							Фундамент на сваях забивных ЖБИ 3 м
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="aditional-options__dropdown">
@@ -1001,7 +1001,7 @@
 						<button class="aditional-options__button text-md-bold" data-dropdown-button>
 							Проживание бригады
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="aditional-options__dropdown">
@@ -1026,7 +1026,7 @@
 						<button class="aditional-options__button text-md-bold" data-dropdown-button>
 							Электричество
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="aditional-options__dropdown">
@@ -1057,22 +1057,25 @@
 				<div class="foundation__items">
 					<div class="foundation__item">
 						<picture>
-							<source loading="lazy" srcset="./Images/foundation_img-1.webp" />
-							<img loading="lazy" src="./Images/foundation_img-1.png" alt="" class="foundation__image">
+							<source loading="lazy" srcset="./src/Images/foundation_img-1.webp" />
+							<img loading="lazy" src="./src/Images/foundation_img-1.png" alt="изображение фундамента"
+								class="foundation__image">
 						</picture>
 						<span class="foundation__text text-md-bold">Свайно-винтовой (2.5×0.8 м, труба металл)</span>
 					</div>
 					<div class="foundation__item">
 						<picture>
-							<source loading="lazy" srcset="./Images/foundation_img-2.webp" />
-							<img loading="lazy" src="./Images/foundation_img-2.png" alt="" class="foundation__image">
+							<source loading="lazy" srcset="./src/Images/foundation_img-2.webp" />
+							<img loading="lazy" src="./src/Images/foundation_img-2.png" alt="изображение фундамента"
+								class="foundation__image">
 						</picture>
 						<span class="foundation__text text-md-bold">Свайно-забивной (3×0.15×0.15 м, ЖБ)</span>
 					</div>
 					<div class="foundation__item">
 						<picture>
-							<source loading="lazy" srcset="./Images/foundation_img-3.webp" />
-							<img loading="lazy" src="./Images/foundation_img-3.png" alt="" class="foundation__image">
+							<source loading="lazy" srcset="./src/Images/foundation_img-3.webp" />
+							<img loading="lazy" src="./src/Images/foundation_img-3.png" alt="изображение фундамента"
+								class="foundation__image">
 						</picture>
 						<span class="foundation__text text-md-bold">Ленточный фундамент</span>
 					</div>
@@ -1085,8 +1088,9 @@
 				<div class="technique__items">
 					<div class="technique__item">
 						<picture>
-							<source loading="lazy" srcset="./Images/technique_img-3.webp" />
-							<img loading="lazy" src="./Images/technique_img-3.png" alt="" class="technique__image">
+							<source loading="lazy" srcset="./src/Images/technique_img-3.webp" />
+							<img loading="lazy" src="./src/Images/technique_img-3.png" alt="изображение техники изготовления"
+								class="technique__image">
 						</picture>
 						<ul class="technique__column-box">
 							<li class="technique__text text-sm">Настил пола</li>
@@ -1101,8 +1105,9 @@
 					</div>
 					<div class="technique__item">
 						<picture>
-							<source loading="lazy" srcset="./Images/technique_img-2.webp" />
-							<img loading="lazy" src="./Images/technique_img-2.png" alt="" class="technique__image">
+							<source loading="lazy" srcset="./src/Images/technique_img-2.webp" />
+							<img loading="lazy" src="./src/Images/technique_img-2.png" alt="изображение техники изготовления"
+								class="technique__image">
 						</picture>
 						<ul class="technique__column-box">
 							<li class="technique__text text-sm">Настил пола</li>
@@ -1116,8 +1121,9 @@
 					</div>
 					<div class="technique__item">
 						<picture>
-							<source loading="lazy" srcset="./Images/technique_img-1.webp" />
-							<img loading="lazy" src="./Images/technique_img-1.png" alt="" class="technique__image">
+							<source loading="lazy" srcset="./src/Images/technique_img-1.webp" />
+							<img loading="lazy" src="./src/Images/technique_img-1.png" alt="изображение техники изготовления"
+								class="technique__image">
 						</picture>
 						<ul class="technique__column-box">
 							<li class="technique__text text-sm">Отделка фасада — имитация бруса</li>
@@ -1133,8 +1139,9 @@
 					</div>
 					<div class="technique__item">
 						<picture>
-							<source loading="lazy" srcset="./Images/technique_img-4.webp" />
-							<img loading="lazy" src="./Images/technique_img-4.png" alt="" class="technique__image">
+							<source loading="lazy" srcset="./src/Images/technique_img-4.webp" />
+							<img loading="lazy" src="./src/Images/technique_img-4.png" alt="изображение техники изготовления"
+								class="technique__image">
 						</picture>
 						<ul class="technique__column-box">
 							<li class="technique__text text-sm">Отделка фасада — имитация бруса</li>
@@ -1152,8 +1159,9 @@
 					</div>
 					<div class="technique__item">
 						<picture>
-							<source loading="lazy" srcset="./Images/technique_img-5.webp" />
-							<img loading="lazy" src="./Images/technique_img-5.png" alt="" class="technique__image">
+							<source loading="lazy" srcset="./src/Images/technique_img-5.webp" />
+							<img loading="lazy" src="./src/Images/technique_img-5.png" alt="изображение техники изготовления"
+								class="technique__image">
 						</picture>
 						<ul class="technique__column-box">
 							<li class="technique__text text-sm">Металлочерепица</li>
@@ -1178,7 +1186,7 @@
 						<button class="faq__button text-md-bold" data-dropdown-button>
 							Что такое брус профилированный клееный?
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="faq__dropdown">
@@ -1194,7 +1202,7 @@
 						<button class="faq__button text-md-bold" data-dropdown-button>
 							Когда утеплять потолок в деревянном доме?
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="faq__dropdown">
@@ -1215,7 +1223,7 @@
 						<button class="faq__button text-md-bold" data-dropdown-button>
 							Какие преимеущества имеет сухой профилированный брус?
 							<svg width="24px" height="24px" data-dropdown-button>
-								<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+								<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 							</svg>
 						</button>
 						<div class="faq__dropdown">
@@ -1263,10 +1271,7 @@
 
 				<div class="footer__item">
 					<a href="" class="footer__image-link">
-						<picture>
-							<source loading="lazy" srcset="./Images/Logo_footer.webp" />
-							<img loading="lazy" src="./Images/Logo_footer.png" alt="" class="footer__image">
-						</picture>
+						<img loading="lazy" src="./src/Images/logo-footer.svg" alt="Логотип" class="footer__image">
 					</a>
 					<div class="footer__contacts">
 						<a href="" class="footer__phone-link h3-md-bold">8 921 204 51 11</a>
@@ -1275,22 +1280,22 @@
 					<div class="footer__items-socials">
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#vk" />
+								<use xlink:href="./src/Images/sprite.svg#vk" />
 							</svg>
 						</a>
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#instagram" />
+								<use xlink:href="./src/Images/sprite.svg#instagram" />
 							</svg>
 						</a>
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#whatsapp" />
+								<use xlink:href="./src/Images/sprite.svg#whatsapp" />
 							</svg>
 						</a>
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#viber" />
+								<use xlink:href="./src/Images/sprite.svg#viber" />
 							</svg>
 						</a>
 					</div>
@@ -1316,20 +1321,114 @@
 				</div>
 				<a href="" class="footer__go-back">
 					<svg width="32px" height="32px">
-						<use xlink:href="./Images/sprite.svg#arrow-up" />
+						<use xlink:href="./src/Images/sprite.svg#arrow-up" />
 					</svg>
 				</a>
 				<div class="footer__made-by">
 					<svg width="32px" height="32px" class="footer__made-by-image">
-						<use xlink:href="./Images/sprite.svg#art-gorka" />
+						<use xlink:href="./src/Images/sprite.svg#art-gorka" />
 					</svg>
 					<span class="footer__made-by-text text-sm">Сделано в ART Gorka</span>
 				</div>
 			</div>
 		</div>
 	</footer>
-
+	<div class="overlay-box">
+		<div class="overlay" id="header-overlay">
+			<div class="overlay__holder">
+				<button class="overlay__close-button">
+					<svg width="32px" height="32px">
+						<use xlink:href="./src/Images/sprite.svg#close" />
+					</svg>
+				</button>
+				<div class="popup">
+					<h3 class="h3-lg-bold overlay__title">Заявка на обратный звонок</h3>
+					<span class="overlay__text text-md">Заполните форму, мы перезвоним Вам в ближайшее время</span>
+					<form action="" class="overlay__form">
+						<label for="overlay-name">
+							<input id="overlay-name" placeholder="Ваше имя" name="overlay-name" type="text"
+								class="overlay__input">
+						</label>
+						<label for="overlay-phone">
+							<input id="overlay-phone" placeholder="+7 999 999 99 99 *" name="overlay-phone" type="text"
+								class="overlay__input">
+						</label>
+						<button type="submit" class="overlay__button click-sm-bold">Отправить</button>
+					</form>
+					<span class="overlay__policy">
+						Отправляя заявку, вы соглашаетесь с
+						<a href="" class="overlay__link">Политикой обработки персональных данных.</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="overlay" id="project-overlay">
+			<div class="overlay__holder">
+				<button class="overlay__close-button">
+					<svg width="32px" height="32px">
+						<use xlink:href="./src/Images/sprite.svg#close" />
+					</svg>
+				</button>
+				<div class="popup">
+					<h3 class="h3-lg-bold overlay__title">Заявка на проект ДК-22</h3>
+					<span class="overlay__text text-md">Заполните форму, мы свяжемся с Вами для уточнения деталей</span>
+					<form action="" class="overlay__form">
+						<label for="overlay-name">
+							<input id="overlay-name" placeholder="Ваше имя" name="overlay-name" type="text"
+								class="overlay__input">
+						</label>
+						<label for="overlay-phone">
+							<input id="overlay-phone" placeholder="+7 999 999 99 99 *" name="overlay-phone" type="text"
+								class="overlay__input">
+						</label>
+						<label for="overlay-email">
+							<input id="overlay-email" placeholder="E-mail" name="overlay-email" type="email"
+								class="overlay__input">
+						</label>
+						<button type="submit" class="overlay__button click-sm-bold">Отправить</button>
+					</form>
+					<span class="overlay__policy">
+						Отправляя заявку, вы соглашаетесь с
+						<a href="" class="overlay__link">Политикой обработки персональных данных.</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div class="overlay" id="consultation-overlay">
+			<div class="overlay__holder">
+				<button class="overlay__close-button">
+					<svg width="32px" height="32px">
+						<use xlink:href="./src/Images/sprite.svg#close" />
+					</svg>
+				</button>
+				<div class="popup">
+					<h3 class="h3-lg-bold overlay__title">Заявка на консультацию</h3>
+					<span class="overlay__text text-md">Заполните форму, мы свяжемся с Вами в ближайшее время</span>
+					<form action="" class="overlay__form">
+						<label for="overlay-name">
+							<input id="overlay-name" placeholder="Ваше имя" name="overlay-name" type="text"
+								class="overlay__input">
+						</label>
+						<label for="overlay-phone">
+							<input id="overlay-phone" placeholder="+7 999 999 99 99 *" name="overlay-phone" type="text"
+								class="overlay__input">
+						</label>
+						<label for="overlay-email">
+							<input id="overlay-email" placeholder="E-mail" name="overlay-email" type="email"
+								class="overlay__input">
+						</label>
+						<button type="submit" class="overlay__button click-sm-bold">Отправить</button>
+					</form>
+					<span class="overlay__policy">
+						Отправляя заявку, вы соглашаетесь с
+						<a href="" class="overlay__link">Политикой обработки персональных данных.</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
+<script type="module" src="./src/main.ts"></script>
 
 </html>
