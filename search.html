@@ -8,8 +8,8 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	<title>Document</title>
-	<script type="module" crossorigin src="./js/index.js"></script>
-	<link rel="stylesheet" crossorigin href="./css/index.css">
+	<script type="module" crossorigin src="./src/js/index-9G6_5U5f.js"></script>
+	<link rel="stylesheet" crossorigin href="./src/css/index-eNpVLg3K.css">
 </head>
 
 <body>
@@ -18,12 +18,11 @@
 
 			<a href="/" class="header__logo-link">
 				<picture>
-					<source loading="lazy" srcset="./Images/logo-mini.png " media="(max-width: 930px)" />
-					<source loading="lazy" srcset="./Images/logo.webp " media="(min-width: 930px)" />
-					<img loading="lazy" src="./Images/logo.png" class="header__logo" alt="MDN" />
+					<source loading="lazy" srcset="./src/Images/logo-mini.svg" media="(max-width: 930px)" />
+					<img loading="lazy" src="./src/Images/logo.svg" class="header__logo" alt="Логотип" />
 				</picture>
 			</a>
-			<div class="header__items" data-menu="close">
+			<div class="header__items header__items_position" data-menu="close">
 				<div class="header__box">
 					<div class="header__item header__item-mr97">
 						<a href="" class="header__item-link h3-md-bold">8 981 125 53 52</a>
@@ -37,27 +36,27 @@
 					<div class="header__item header__item-socials">
 						<a href="" class="header__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#vk" />
+								<use xlink:href="./src/Images/sprite.svg#vk" />
 							</svg>
 						</a>
 						<a href="" class="header__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#instagram" />
+								<use xlink:href="./src/Images/sprite.svg#instagram" />
 							</svg>
 						</a>
 						<a href="" class="header__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#whatsapp" />
+								<use xlink:href="./src/Images/sprite.svg#whatsapp" />
 							</svg>
 						</a>
 						<a href="" class="header__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#viber" />
+								<use xlink:href="./src/Images/sprite.svg#viber" />
 							</svg>
 						</a>
 					</div>
 					<div class="header__item">
-						<button class="header__button click-md-bold">Заказать звонок</button>
+						<button header-overlay class="header__button click-md-bold">Заказать звонок</button>
 					</div>
 				</div>
 				<nav class="header__navigation">
@@ -73,33 +72,33 @@
 			<div class="header__button-item">
 				<a href="" class="header__phone-link">
 					<svg width="32px" height="32px">
-						<use xlink:href="./Images/sprite.svg#phone" />
+						<use xlink:href="./src/Images/sprite.svg#phone" />
 					</svg>
 				</a>
 				<button class="header__menu" data-menu-open data-menu-close>
 					<svg width="32px" height="32px" data-menu-open data-menu-close>
-						<use xlink:href="./Images/sprite.svg#menu" />
+						<use xlink:href="./src/Images/sprite.svg#menu" />
 					</svg>
 				</button>
 			</div>
 		</div>
-		<nav class="navigation">
-			<div class="container navigation__container">
-				<a href="" class="navigation__link text-md">Проекты</a>
-				<a href="" class="navigation__link text-md">Акции</a>
-				<a href="" class="navigation__link text-md">Построенные дома</a>
-				<a href="" class="navigation__link text-md">О компании</a>
-				<a href="" class="navigation__link text-md">Контакты</a>
-			</div>
-		</nav>
 	</header>
+	<nav class="navigation">
+		<div class="container navigation__container">
+			<a href="" class="navigation__link text-md">Проекты</a>
+			<a href="" class="navigation__link text-md">Акции</a>
+			<a href="" class="navigation__link text-md">Построенные дома</a>
+			<a href="" class="navigation__link text-md">О компании</a>
+			<a href="" class="navigation__link text-md">Контакты</a>
+		</div>
+	</nav>
 	<main class="main main__search">
 		<section class="page-navigation">
 			<div class="container page-navigation__container">
 				<div class="page-navigation__item">
 					<a href="" class="page-navigation__link">
 						<svg width="24px" height="24px">
-							<use xlink:href="./Images/sprite.svg#house" />
+							<use xlink:href="./src/Images/sprite.svg#house" />
 						</svg>
 					</a>
 					<span class="text-sm">/</span>
@@ -147,33 +146,32 @@
 							<div class="filter__form-close-menu">
 								<span class="text-lg-bold">
 									<svg width="25px" height="24px">
-										<use xlink:href="./Images/sprite.svg#filter" />
+										<use xlink:href="./src/Images/sprite.svg#filter" />
 									</svg>
 									Фильтр
 								</span>
 								<button type="button" class="filter__button filter__button_menu text-sm-bold" data-search-close>
 									<svg width="32px" height="32px">
-										<use xlink:href="./Images/sprite.svg#close" />
+										<use xlink:href="./src/Images/sprite.svg#close" />
 									</svg>
 								</button>
 							</div>
 							<div class="filter__options-item" data-dropdown>
 								<div class="filter__option-holder">
 									<button type="button" class="filter__option" data-dropdown-button>
-										<span class="filter__option-name text-sm-bold" data-dropdown-button>Размер
-											<span class="text-sm"></span>
-										</span>
+										<span class="filter__option-name text-sm-bold" data-dropdown-button>Размер<span
+												class="text-sm"></span></span>
 										<svg width="24px" height="24px" data-dropdown-button>
-											<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+											<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 										</svg>
 									</button>
 									<button type="button" class="filter__reset-button" data-reset-button>
 										<svg width="16px" height="16px" data-reset-button>
-											<use xlink:href="./Images/sprite.svg#small-close" />
+											<use xlink:href="./src/Images/sprite.svg#small-close" />
 										</svg>
 									</button>
 								</div>
-								<div class="filter__dropdown">
+								<div class="filter__dropdown filter__dropdown_gradient">
 									<div class="filter__dropdown-box">
 										<div class="filter__dropdown-item">
 											<label for="size1" class="filter__dropdown-label text-sm-bold">
@@ -231,12 +229,11 @@
 										<span class="filter__option-name text-sm-bold" data-dropdown-button>Этажность<span
 												class="text-sm"></span></span>
 										<svg width="24px" height="24px" data-dropdown-button>
-											<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+											<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 										</svg>
-									</button>
-									<button type="button" class="filter__reset-button" data-reset-button>
+									</button><button type="button" class="filter__reset-button" data-reset-button>
 										<svg width="16px" height="16px" data-reset-button>
-											<use xlink:href="./Images/sprite.svg#small-close" />
+											<use xlink:href="./src/Images/sprite.svg#small-close" />
 										</svg>
 									</button>
 								</div>
@@ -245,27 +242,19 @@
 										<div class="filter__dropdown-item">
 											<label for="layer1" class="filter__dropdown-label text-sm-bold">
 												<input id="layer1" data-size-input type="checkbox" class="filter__dropdown-input">
-												1 <span class="text-sm">(16)</span>
+												1 этаж <span class="text-sm">(16)</span>
 											</label>
 											<label for="layer2" class="filter__dropdown-label text-sm-bold">
 												<input id="layer2" data-size-input type="checkbox" class="filter__dropdown-input">
-												2 <span class="text-sm">(16)</span>
+												1 этаж + мансарда <span class="text-sm">(16)</span>
 											</label>
 											<label for="layer3" class="filter__dropdown-label text-sm-bold">
 												<input id="layer3" data-size-input type="checkbox" class="filter__dropdown-input">
-												3 <span class="text-sm">(16)</span>
+												1.5 этажа <span class="text-sm">(16)</span>
 											</label>
 											<label for="layer4" class="filter__dropdown-label text-sm-bold">
 												<input id="layer4" data-size-input type="checkbox" class="filter__dropdown-input">
-												4 <span class="text-sm">(16)</span>
-											</label>
-											<label for="layer5" class="filter__dropdown-label text-sm-bold">
-												<input id="layer5" data-size-input type="checkbox" class="filter__dropdown-input">
-												5 <span class="text-sm">(16)</span>
-											</label>
-											<label for="layer6" class="filter__dropdown-label text-sm-bold">
-												<input id="layer6" data-size-input type="checkbox" class="filter__dropdown-input">
-												6 <span class="text-sm">(16)</span>
+												2 этажа <span class="text-sm">(16)</span>
 											</label>
 										</div>
 									</div>
@@ -277,13 +266,19 @@
 								</div>
 							</div>
 							<div class="filter__options-item" data-dropdown>
-								<button type="button" class="filter__option" data-dropdown-button>
-									<span class="filter__option-name text-sm-bold" data-dropdown-button>Площадь, м²<span
-											class="text-sm"></span></span>
-									<svg width="24px" height="24px" data-dropdown-button>
-										<use xlink:href="./Images/sprite.svg#arrow-small-up" />
-									</svg>
-								</button>
+								<div class="filter__option-holder">
+									<button type="button" class="filter__option" data-dropdown-button>
+										<span class="filter__option-name text-sm-bold" data-dropdown-button>Площадь, м²<span
+												class="text-sm"></span></span>
+										<svg width="24px" height="24px" data-dropdown-button>
+											<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
+										</svg>
+									</button><button type="button" class="filter__reset-button" data-reset-button>
+										<svg width="16px" height="16px" data-reset-button>
+											<use xlink:href="./src/Images/sprite.svg#small-close" />
+										</svg>
+									</button>
+								</div>
 								<div class="filter__dropdown">
 									<div class="filter__dropdown-box">
 										<div class="filter__dropdown-item">
@@ -314,20 +309,27 @@
 								</div>
 							</div>
 							<div class="filter__options-item" data-dropdown>
-								<button type="button" class="filter__option" data-dropdown-button>
-									<span class="filter__option-name text-sm-bold" data-dropdown-button>Цена, ₽<span
-											class="text-sm"></span></span>
-									<svg width="24px" height="24px" data-dropdown-button>
-										<use xlink:href="./Images/sprite.svg#arrow-small-up" />
-									</svg>
-								</button>
+								<div class="filter__option-holder">
+
+									<button type="button" class="filter__option" data-dropdown-button>
+										<span class="filter__option-name text-sm-bold" data-dropdown-button>Цена, ₽<span
+												class="text-sm"></span></span>
+										<svg width="24px" height="24px" data-dropdown-button>
+											<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
+										</svg>
+									</button><button type="button" class="filter__reset-button" data-reset-button>
+										<svg width="16px" height="16px" data-reset-button>
+											<use xlink:href="./src/Images/sprite.svg#small-close" />
+										</svg>
+									</button>
+								</div>
 								<div class="filter__dropdown">
 									<div class="filter__dropdown-box">
 										<div class="filter__dropdown-item">
 											<div class="filter__dropdown-range-field filter__dropdown-range-price">
-												<input type="number" value="1000000"
+												<input type="number" value="1470000"
 													class="filter__dropdown-range-number filter__dropdown-number-min range-number-price-min">
-												<input type="number" value="60000000"
+												<input type="number" value="22690000"
 													class="filter__dropdown-range-number filter__dropdown-number-max range-number-price-max">
 											</div>
 											<div class="filter__dropdown-slider filter__dropdown-slider-price">
@@ -337,9 +339,9 @@
 											</div>
 											<div class="filter__dropdown-range-inputs filter__dropdown-inputs-price">
 												<input type="range" class="filter__dropdown-range-input-min range-price-min"
-													min="1000000" max="60000000" value="1000000" step="1000">
+													min="1470000" max="22690000" value="1470000" step="1000">
 												<input type="range" class="filter__dropdown-range-input-max range-price-max"
-													min="1000000" max="60000000" value="60000000" step="1000">
+													min="1470000" max="22690000" value="22690000" step="1000">
 											</div>
 
 										</div>
@@ -357,12 +359,11 @@
 										<span class="filter__option-name text-sm-bold" data-dropdown-button>Кол-во комнат<span
 												class="text-sm"></span></span>
 										<svg width="24px" height="24px" data-dropdown-button>
-											<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+											<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 										</svg>
-									</button>
-									<button type="button" class="filter__reset-button" data-reset-button>
+									</button><button type="button" class="filter__reset-button" data-reset-button>
 										<svg width="16px" height="16px" data-reset-button>
-											<use xlink:href="./Images/sprite.svg#small-close" />
+											<use xlink:href="./src/Images/sprite.svg#small-close" />
 										</svg>
 									</button>
 								</div>
@@ -385,30 +386,6 @@
 												<input id="room4" data-size-input type="checkbox" class="filter__dropdown-input">
 												4 <span class="text-sm">(16)</span>
 											</label>
-											<label for="room5" class="filter__dropdown-label text-sm-bold">
-												<input id="room5" data-size-input type="checkbox" class="filter__dropdown-input">
-												5 <span class="text-sm">(16)</span>
-											</label>
-											<label for="room6" class="filter__dropdown-label text-sm-bold">
-												<input id="room6" data-size-input type="checkbox" class="filter__dropdown-input">
-												6 <span class="text-sm">(16)</span>
-											</label>
-											<label for="room7" class="filter__dropdown-label text-sm-bold">
-												<input id="room7" data-size-input type="checkbox" class="filter__dropdown-input">
-												7 <span class="text-sm">(16)</span>
-											</label>
-											<label for="room8" class="filter__dropdown-label text-sm-bold">
-												<input id="room8" data-size-input type="checkbox" class="filter__dropdown-input">
-												8 <span class="text-sm">(16)</span>
-											</label>
-											<label for="room9" class="filter__dropdown-label text-sm-bold">
-												<input id="room9" data-size-input type="checkbox" class="filter__dropdown-input">
-												9 <span class="text-sm">(16)</span>
-											</label>
-											<label for="room10" class="filter__dropdown-label text-sm-bold">
-												<input id="room10" data-size-input type="checkbox" class="filter__dropdown-input">
-												10 <span class="text-sm">(16)</span>
-											</label>
 										</div>
 									</div>
 									<div class="filter__dropdown-box">
@@ -424,12 +401,11 @@
 										<span class="filter__option-name text-sm-bold" data-dropdown-button>Опции<span
 												class="text-sm"></span></span>
 										<svg width="24px" height="24px" data-dropdown-button>
-											<use xlink:href="./Images/sprite.svg#arrow-small-up" />
+											<use xlink:href="./src/Images/sprite.svg#arrow-small-up" />
 										</svg>
-									</button>
-									<button type="button" class="filter__reset-button" data-reset-button>
+									</button><button type="button" class="filter__reset-button" data-reset-button>
 										<svg width="16px" height="16px" data-reset-button>
-											<use xlink:href="./Images/sprite.svg#small-close" />
+											<use xlink:href="./src/Images/sprite.svg#small-close" />
 										</svg>
 									</button>
 								</div>
@@ -438,43 +414,19 @@
 										<div class="filter__dropdown-item">
 											<label for="option1" class="filter__dropdown-label text-sm-bold">
 												<input id="option1" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 1 <span class="text-sm">(16)</span>
+												Эркер <span class="text-sm">(16)</span>
 											</label>
 											<label for="option2" class="filter__dropdown-label text-sm-bold">
 												<input id="option2" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 2 <span class="text-sm">(16)</span>
+												Веранда <span class="text-sm">(16)</span>
 											</label>
 											<label for="option3" class="filter__dropdown-label text-sm-bold">
 												<input id="option3" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 3 <span class="text-sm">(16)</span>
+												Балкон <span class="text-sm">(16)</span>
 											</label>
 											<label for="option4" class="filter__dropdown-label text-sm-bold">
 												<input id="option4" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 4 <span class="text-sm">(16)</span>
-											</label>
-											<label for="option5" class="filter__dropdown-label text-sm-bold">
-												<input id="option5" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 5 <span class="text-sm">(16)</span>
-											</label>
-											<label for="option6" class="filter__dropdown-label text-sm-bold">
-												<input id="option6" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 6 <span class="text-sm">(16)</span>
-											</label>
-											<label for="option6" class="filter__dropdown-label text-sm-bold">
-												<input id="option6" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 7 <span class="text-sm">(16)</span>
-											</label>
-											<label for="option6" class="filter__dropdown-label text-sm-bold">
-												<input id="option6" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 8 <span class="text-sm">(16)</span>
-											</label>
-											<label for="option6" class="filter__dropdown-label text-sm-bold">
-												<input id="option6" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 9 <span class="text-sm">(16)</span>
-											</label>
-											<label for="option6" class="filter__dropdown-label text-sm-bold">
-												<input id="option6" data-size-input type="checkbox" class="filter__dropdown-input">
-												Опция 10 <span class="text-sm">(16)</span>
+												Терраса <span class="text-sm">(16)</span>
 											</label>
 										</div>
 									</div>
@@ -488,12 +440,16 @@
 							<div class="filter__options-item filter__options-item_show">
 								<button type="submit" class="filter__option">
 									<span class="filter__option-name text-sm">Показать (32)</span>
+								</button><button type="button" class="filter__reset-button" data-reset-button>
+									<svg width="16px" height="16px" data-reset-button>
+										<use xlink:href="./src/Images/sprite.svg#small-close" />
+									</svg>
 								</button>
 							</div>
 							<div class="filter__options-item filter__options-item_postion">
 								<button type="button" class="filter__option">
 									<svg width="16px" height="16px">
-										<use xlink:href="./Images/sprite.svg#small-close" />
+										<use xlink:href="./src/Images/sprite.svg#small-close" />
 									</svg>
 									<span class="filter__option-name text-sm">Сбросить фильтр</span>
 								</button>
@@ -502,7 +458,7 @@
 						</div>
 						<button type="button" class="filter__button text-sm-bold" data-search-open>
 							<svg width="25px" height="24px">
-								<use xlink:href="./Images/sprite.svg#filter" />
+								<use xlink:href="./src/Images/sprite.svg#filter" />
 							</svg>
 							Открыть фильтр
 						</button>
@@ -520,32 +476,36 @@
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
@@ -553,10 +513,11 @@
 							<div class="results__swiper-pagination swiper-pagination"></div>
 						</div>
 						<div class="images">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/hero_image3.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+								class="image">
+							<img loading="lazy" src="./src/Images/hero_image3.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
 						</div>
 					</div>
 					<div class="results__box">
@@ -593,32 +554,36 @@
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
@@ -626,10 +591,11 @@
 							<div class="results__swiper-pagination swiper-pagination"></div>
 						</div>
 						<div class="images">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/hero_image3.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+								class="image">
+							<img loading="lazy" src="./src/Images/hero_image3.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
 						</div>
 					</div>
 					<div class="results__box">
@@ -666,32 +632,36 @@
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
@@ -699,10 +669,11 @@
 							<div class="results__swiper-pagination swiper-pagination"></div>
 						</div>
 						<div class="images">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/hero_image3.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+								class="image">
+							<img loading="lazy" src="./src/Images/hero_image3.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
 						</div>
 					</div>
 					<div class="results__box">
@@ -739,32 +710,36 @@
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
@@ -772,10 +747,11 @@
 							<div class="results__swiper-pagination swiper-pagination"></div>
 						</div>
 						<div class="images">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/hero_image3.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+								class="image">
+							<img loading="lazy" src="./src/Images/hero_image3.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
 						</div>
 					</div>
 					<div class="results__box">
@@ -812,32 +788,36 @@
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
@@ -845,10 +825,11 @@
 							<div class="results__swiper-pagination swiper-pagination"></div>
 						</div>
 						<div class="images">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/hero_image3.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+								class="image">
+							<img loading="lazy" src="./src/Images/hero_image3.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
 						</div>
 					</div>
 					<div class="results__box">
@@ -885,32 +866,36 @@
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
@@ -918,10 +903,11 @@
 							<div class="results__swiper-pagination swiper-pagination"></div>
 						</div>
 						<div class="images">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/hero_image3.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+								class="image">
+							<img loading="lazy" src="./src/Images/hero_image3.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
 						</div>
 					</div>
 					<div class="results__box">
@@ -958,32 +944,36 @@
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
@@ -991,10 +981,11 @@
 							<div class="results__swiper-pagination swiper-pagination"></div>
 						</div>
 						<div class="images">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/hero_image3.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+								class="image">
+							<img loading="lazy" src="./src/Images/hero_image3.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
 						</div>
 					</div>
 					<div class="results__box">
@@ -1031,32 +1022,36 @@
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
@@ -1064,10 +1059,11 @@
 							<div class="results__swiper-pagination swiper-pagination"></div>
 						</div>
 						<div class="images">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/hero_image3.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+								class="image">
+							<img loading="lazy" src="./src/Images/hero_image3.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
 						</div>
 					</div>
 					<div class="results__box">
@@ -1104,32 +1100,36 @@
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
@@ -1137,10 +1137,11 @@
 							<div class="results__swiper-pagination swiper-pagination"></div>
 						</div>
 						<div class="images">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/hero_image3.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+								class="image">
+							<img loading="lazy" src="./src/Images/hero_image3.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
 						</div>
 					</div>
 					<div class="results__box">
@@ -1177,32 +1178,36 @@
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
@@ -1210,10 +1215,11 @@
 							<div class="results__swiper-pagination swiper-pagination"></div>
 						</div>
 						<div class="images">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/hero_image3.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+								class="image">
+							<img loading="lazy" src="./src/Images/hero_image3.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
 						</div>
 					</div>
 					<div class="results__box">
@@ -1250,32 +1256,36 @@
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
@@ -1283,10 +1293,11 @@
 							<div class="results__swiper-pagination swiper-pagination"></div>
 						</div>
 						<div class="images">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/hero_image3.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+								class="image">
+							<img loading="lazy" src="./src/Images/hero_image3.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
 						</div>
 					</div>
 					<div class="results__box">
@@ -1323,32 +1334,36 @@
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
 								<div class="results__swiper-slide swiper-slide">
 									<div class="results__swiper-box">
 										<picture>
-											<source loading="lazy" srcset="./Images/results_image.webp" />
-											<img loading="lazy" src="./Images/results_image.jpg" alt="" class="results__image">
+											<source loading="lazy" srcset="./src/Images/results_image.webp" />
+											<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки"
+												class="results__image">
 										</picture>
 									</div>
 								</div>
@@ -1356,10 +1371,11 @@
 							<div class="results__swiper-pagination swiper-pagination"></div>
 						</div>
 						<div class="images">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/built-house_img.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/hero_image3.jpg" alt="" class="image">
-							<img loading="lazy" src="./Images/results_image.jpg" alt="" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/built-house_img.jpg" alt="изображеник катрочки"
+								class="image">
+							<img loading="lazy" src="./src/Images/hero_image3.jpg" alt="изображеник катрочки" class="image">
+							<img loading="lazy" src="./src/Images/results_image.jpg" alt="изображеник катрочки" class="image">
 						</div>
 					</div>
 					<div class="results__box">
@@ -1429,10 +1445,7 @@
 
 				<div class="footer__item">
 					<a href="" class="footer__image-link">
-						<picture>
-							<source loading="lazy" srcset="./Images/Logo_footer.webp" />
-							<img loading="lazy" src="./Images/Logo_footer.png" alt="" class="footer__image">
-						</picture>
+						<img loading="lazy" src="./src/Images/logo-footer.svg" alt="Логотип" class="footer__image">
 					</a>
 					<div class="footer__contacts">
 						<a href="" class="footer__phone-link h3-md-bold">8 921 204 51 11</a>
@@ -1441,22 +1454,22 @@
 					<div class="footer__items-socials">
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#vk" />
+								<use xlink:href="./src/Images/sprite.svg#vk" />
 							</svg>
 						</a>
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#instagram" />
+								<use xlink:href="./src/Images/sprite.svg#instagram" />
 							</svg>
 						</a>
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#whatsapp" />
+								<use xlink:href="./src/Images/sprite.svg#whatsapp" />
 							</svg>
 						</a>
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./Images/sprite.svg#viber" />
+								<use xlink:href="./src/Images/sprite.svg#viber" />
 							</svg>
 						</a>
 					</div>
@@ -1482,20 +1495,49 @@
 				</div>
 				<a href="" class="footer__go-back">
 					<svg width="32px" height="32px">
-						<use xlink:href="./Images/sprite.svg#arrow-up" />
+						<use xlink:href="./src/Images/sprite.svg#arrow-up" />
 					</svg>
 				</a>
 				<div class="footer__made-by">
 					<svg width="32px" height="32px" class="footer__made-by-image">
-						<use xlink:href="./Images/sprite.svg#art-gorka" />
+						<use xlink:href="./src/Images/sprite.svg#art-gorka" />
 					</svg>
 					<span class="footer__made-by-text text-sm">Сделано в ART Gorka</span>
 				</div>
 			</div>
 		</div>
 	</footer>
-
-
+	<div class="overlay-box">
+		<div class="overlay" id="header-overlay">
+			<div class="overlay__holder">
+				<button class="overlay__close-button">
+					<svg width="32px" height="32px">
+						<use xlink:href="./src/Images/sprite.svg#close" />
+					</svg>
+				</button>
+				<div class="popup">
+					<h3 class="h3-lg-bold overlay__title">Заявка на обратный звонок</h3>
+					<span class="overlay__text text-md">Заполните форму, мы перезвоним Вам в ближайшее время</span>
+					<form action="" class="overlay__form">
+						<label for="overlay-name">
+							<input id="overlay-name" placeholder="Ваше имя" name="overlay-name" type="text"
+								class="overlay__input">
+						</label>
+						<label for="overlay-phone">
+							<input id="overlay-phone" placeholder="+7 999 999 99 99 *" name="overlay-phone" type="text"
+								class="overlay__input">
+						</label>
+						<button type="submit" class="overlay__button click-sm-bold">Отправить</button>
+					</form>
+					<span class="overlay__policy">
+						Отправляя заявку, вы соглашаетесь с
+						<a href="" class="overlay__link">Политикой обработки персональных данных.</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+<script type="module" src="./src/main.ts"></script>
 
 </html>
