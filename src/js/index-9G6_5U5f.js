@@ -46,16 +46,16 @@
 	let r = function () {
 		n && n.getAttribute("data-menu") === "open" ? (n.dataset.menu = "close", bn(n), e.innerHTML = `
 				<svg class="header__img-icon" >
-					<use xlink: href = "../Images/sprite.svg#menu" />
+					<use xlink: href = "./Images/sprite.svg#menu" />
 				</svg>`) : n && (n.dataset.menu = "open", Td(n), e.innerHTML = `
 				<svg class="header__img-icon">
-					<use xlink:href="../Images/sprite.svg#close" />
+					<use xlink:href="./Images/sprite.svg#close" />
 				</svg>`)
 	}; var op = r; const n = document.querySelector("[data-menu]"), e = document.querySelector("[data-menu-open]"), t = document.querySelector("[data-menu-close]"); document.querySelectorAll(".header__item").forEach(s => {
 		s.addEventListener("click", () => {
 			n && (n.dataset.menu = "close", bn(n), e.innerHTML = `
 					<svg width="32px" height="32px">
-						<use xlink:href="../Images/sprite.svg#close" />
+						<use xlink:href="./Images/sprite.svg#close" />
 					</svg>`)
 		})
 	}), e.addEventListener("click", r), t.addEventListener("click", r)
