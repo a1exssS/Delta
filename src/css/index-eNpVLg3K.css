@@ -5868,8 +5868,8 @@ body {
 	}
 
 	.filter__form-box .filter__options .filter__reset-button {
-		width: 48px;
-		height: 48px;
+		width: 49px;
+		height: 49px;
 		align-items: center;
 		justify-content: center;
 		display: none
@@ -5895,7 +5895,8 @@ body {
 
 .filter__options-item svg {
 	color: var(--bright-brown-bg-color);
-	transition: .2s linear
+	transition: .2s linear;
+	display: block !important
 }
 
 .filter__options-item.active {
