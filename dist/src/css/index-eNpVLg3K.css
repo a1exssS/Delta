@@ -784,10 +784,6 @@ body {
 	}
 }
 
-.header__items_position {
-	top: 115px
-}
-
 .navigation {
 	background-color: var(--beige-200-bg-color);
 	border-top: 1px solid var(--dark-beige-border-color)
@@ -829,7 +825,6 @@ body {
 	color: var(--black-text-color);
 	transition: .2s linear;
 	position: relative;
-	white-space: nowrap;
 	width: max-content
 }
 
@@ -5667,6 +5662,12 @@ body {
 	display: none
 }
 
+@media (max-width: 739px) {
+	.filter__dropdown {
+		background-color: var(--beige-100-bg-color)
+	}
+}
+
 .filter__dropdown_gradient .filter__dropdown-box:last-child:after {
 	content: "";
 	pointer-events: none;
@@ -5680,7 +5681,8 @@ body {
 }
 
 .filter__form-close-menu {
-	height: 120px
+	height: 120px;
+	border-bottom: 1px solid var(--dark-beige-border-color)
 }
 
 @media (min-width: 740px) {
@@ -5869,7 +5871,8 @@ body {
 		width: 48px;
 		height: 48px;
 		align-items: center;
-		justify-content: center
+		justify-content: center;
+		display: none
 	}
 
 	.filter__form-box .filter__options .filter__option {
@@ -5896,18 +5899,10 @@ body {
 }
 
 .filter__options-item.active {
-	background-color: var(--bright-brown-bg-color)
-}
-
-.filter__options-item.active:not(:nth-child(2)) {
 	background-color: var(--beige-300-bg-color)
 }
 
-.filter__options-item.active:not(:nth-child(2)) svg {
-	color: var(--bright-brown-bg-color)
-}
-
-.filter__options-item.active:not(:nth-child(2)) .filter__option-name {
+.filter__options-item.active .filter__option-name {
 	color: var(--bright-brown-bg-color)
 }
 
@@ -5924,13 +5919,8 @@ body {
 }
 
 .filter__options-item.active svg {
-	color: var(--white-bg-color);
+	color: var(--bright-brown-bg-color);
 	transform: rotate(180deg)
-}
-
-.filter__options-item.active button {
-	color: var(--white-bg-color);
-	display: flex
 }
 
 .filter__options-item.active .filter__dropdown {
@@ -6028,12 +6018,13 @@ body {
 
 .filter__options-item_show {
 	position: sticky;
+	z-index: 5;
 	bottom: 0;
 	padding: 10px;
-	background-color: var(--beige-100-bg-color);
+	background-color: var(--white-bg-color);
 	display: flex;
 	border: 0;
-	flex-grow: 1;
+	margin-top: auto;
 	align-items: self-end
 }
 
