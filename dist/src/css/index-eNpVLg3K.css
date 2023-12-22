@@ -821,6 +821,7 @@ body {
 	display: flex;
 	text-wrap: nowrap;
 	flex-wrap: nowrap;
+	white-space: nowrap;
 	display: inline-block;
 	color: var(--black-text-color);
 	transition: .2s linear;
