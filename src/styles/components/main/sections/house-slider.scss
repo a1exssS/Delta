@@ -1,13 +1,13 @@
 .house-slider {
 	background-color: var(--beige-100-bg-color);
-	padding: 40px 0 0 0;
+	padding: 35px 0 0 0;
 
 	@media (max-width:1300px) {
 		padding: 40px 0 0 0;
 	}
 
 	@media (max-width:739px) {
-		padding: 40px 0 0 0;
+		padding: 30px 0 0 0;
 	}
 
 	&__container {}
@@ -29,7 +29,7 @@
 
 	&__items {
 		display: grid;
-		grid-template-columns: 2.3fr 1fr;
+		grid-template-columns: 2.4fr 1fr;
 		gap: 40px;
 		margin-top: 50px;
 
@@ -40,6 +40,12 @@
 		@media (max-width:991px) {
 			grid-template-columns: 1fr;
 			gap: 80px;
+			margin-top: 40px;
+		}
+
+		@media (max-width:739px) {
+
+			margin-top: 30px;
 		}
 	}
 
@@ -107,7 +113,7 @@
 		flex-direction: column;
 
 		&:first-child {
-			gap: 15px;
+			gap: 12px;
 		}
 	}
 
@@ -140,7 +146,6 @@
 		@media (max-width:650px) {
 			&:not(:last-child) {
 				margin-right: 0px;
-				margin-bottom: 10px;
 			}
 		}
 
@@ -150,7 +155,8 @@
 		color: var(--white-bg-color);
 		position: relative;
 		display: block;
-		padding: 24px 48px;
+		padding: 17px 0;
+
 
 		@media (max-width:1500px) {
 			padding: 17px 32px;

@@ -57,7 +57,7 @@
 
 
 	&__container {
-		margin-top: 40px;
+		margin-top: 60px;
 		position: relative;
 
 		@media (max-width:991px) {
@@ -86,7 +86,7 @@
 	&__swiper-boxes {
 		height: 100%;
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: minmax(10px, 830px) minmax(10px, 890px);
 
 		@media (max-width:991px) {
 			grid-template-columns: 1fr;
@@ -129,7 +129,7 @@
 		}
 
 		&:last-child {
-			padding: 40px;
+			padding: 40px 60px;
 			display: flex;
 			flex-direction: column;
 			align-items: start;
@@ -185,6 +185,8 @@
 		-webkit-line-clamp: 2;
 		overflow: hidden;
 		-webkit-box-orient: vertical;
+		line-height: 130%;
+		word-spacing: -2px;
 
 		@media (max-width:1600px) {
 			font-size: 32px;
@@ -204,7 +206,8 @@
 
 	&__swiper-subtitle {
 		display: inline-block;
-		margin-top: 30px;
+		margin-top: 25px;
+		font-size: 20px;
 
 		@media (max-width:1400px) {
 			font-size: 16px;

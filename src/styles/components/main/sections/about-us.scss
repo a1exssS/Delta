@@ -135,11 +135,16 @@
 
 	&__info {
 		margin-top: 20px;
+
 	}
 
 	&__info-text {
 		display: block;
-		line-height: 230%;
+		line-height: 120%;
+
+		&:not(:first-child) {
+			margin-top: 18px;
+		}
 	}
 
 	&__card {
@@ -164,6 +169,10 @@
 		align-items: center;
 		margin-top: 20px;
 		width: 100%;
+
+		span {
+			width: 100%;
+		}
 
 		svg {
 			margin-right: 10px;

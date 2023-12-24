@@ -15,7 +15,7 @@
 
 	&__container {
 		display: grid;
-		grid-template-columns: 1.18fr 0.82fr;
+		grid-template-columns: 1.18fr 0.8fr;
 		gap: 10px;
 		height: fit-content;
 
@@ -34,7 +34,7 @@
 		position: relative;
 
 		&:first-child {
-			margin-bottom: 60px;
+			margin-bottom: 50px;
 
 			@media (max-width:1200px) {
 				margin-top: 30px;
@@ -66,7 +66,9 @@
 		grid-template-columns: repeat(2, 1fr);
 		max-width: 640px;
 		height: fit-content;
-		margin: 32px;
+		margin: 20px;
+		margin-left: 31px;
+		margin-top: 31px;
 		position: relative;
 
 		@media (max-width:1200px) {
@@ -78,6 +80,7 @@
 		background: var(--gradient-color);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		line-height: 110%;
 
 		@media (max-width:1600px) {
 			font-size: 56px;
@@ -110,7 +113,7 @@
 	}
 
 	&__link-box {
-		margin-top: 55px;
+		margin-top: 50px;
 		display: flex;
 		align-items: center;
 

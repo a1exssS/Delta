@@ -1,6 +1,6 @@
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 if (document.querySelector('.filter__options-item')) {
-	const menu = document.querySelector('[data-search]')
+	const searchMenu = document.querySelector('[data-search]')
 	const openSearchButton = document.querySelector('[data-search-open]')
 	const closeSearchButton = document.querySelector('[data-search-close]')
 	const searchLinks = document.querySelectorAll('.filter__options-item')
@@ -8,21 +8,20 @@ if (document.querySelector('.filter__options-item')) {
 
 	searchLinks.forEach(event => {
 		event.addEventListener('click', () => {
-			if (menu) {
-				menu.dataset.menu = 'close'
-				enableBodyScroll(menu)
+			if (searchMenu) {
+				searchMenu.dataset.search = 'open'
+				disableBodyScroll(searchMenu)
 			}
-
 		})
 	})
 	function toggleSearchMenu() {
-		if (menu && menu.getAttribute('data-search') === 'open') {
-			menu.dataset.search = 'close'
-			enableBodyScroll(menu)
+		if (searchMenu && searchMenu.getAttribute('data-search') === 'open') {
+			searchMenu.dataset.search = 'close'
+			enableBodyScroll(searchMenu)
 		} else {
-			if (menu) {
-				menu.dataset.search = 'open'
-				disableBodyScroll(menu)
+			if (searchMenu) {
+				searchMenu.dataset.search = 'open'
+				disableBodyScroll(searchMenu)
 			}
 		}
 	}

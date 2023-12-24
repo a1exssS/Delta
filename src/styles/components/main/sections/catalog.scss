@@ -1,20 +1,10 @@
 .catalog {
 	background-color: var(--beige-100-bg-color);
-	min-height: 692px;
 
-	@media (max-width:1500px) {
-		min-height: 504px;
+	&__container {
+		// padding-top: 20px;
+
 	}
-
-	@media (max-width:919px) {
-		min-height: 814px;
-	}
-
-	@media (max-width:575px) {
-		min-height: 621px;
-	}
-
-	&__container {}
 
 	&__title {
 		background: var(--gradient-color);
@@ -35,7 +25,7 @@
 		display: grid;
 		gap: 20px;
 		grid-template-columns: 1fr 1fr;
-		margin-top: 50px;
+		margin-top: 60px;
 
 		@media (max-width:1300px) {
 			margin-top: 40px;
@@ -43,6 +33,7 @@
 
 		@media (max-width:919px) {
 			grid-template-columns: 1fr;
+			gap: 10px;
 		}
 	}
 
@@ -61,22 +52,22 @@
 			}
 		}
 
-		&:last-child {
+		&:first-child {
 			position: relative;
+			order: -1;
 
 			@media (max-width:919px) {
-				order: -1;
 
 				&::after {
 					content: '';
 					position: absolute;
-					bottom: 0px;
-					left: 0px;
+					top: 0px;
+					right: 0px;
 					width: 0;
 					height: 0;
 					border-style: solid;
-					border-width: 40px 40px 40px 0px;
-					border-color: transparent transparent var(--beige-100-bg-color) transparent;
+					border-width: 0px 40px 40px 40px;
+					border-color: transparent var(--beige-100-bg-color) transparent transparent;
 					z-index: 1;
 				}
 			}
@@ -84,31 +75,32 @@
 			&::before {
 				content: '';
 				position: absolute;
-				top: 0px;
-				right: 0px;
+				bottom: 0px;
+				left: 0px;
 				width: 0;
 				height: 0;
 				border-style: solid;
-				border-width: 40px 0px 40px 40px;
-				border-color: var(--beige-100-bg-color) transparent transparent transparent;
+				border-width: 40px 40px 0px 40px;
+				border-color: transparent transparent transparent var(--beige-100-bg-color);
 				z-index: 1;
 			}
 		}
 
-		&:first-child {
+		&:last-child {
 			position: relative;
 
 			@media (min-width:919px) {
 				&::before {
+
 					content: '';
 					position: absolute;
-					bottom: 0px;
-					left: 0px;
+					top: 0px;
+					right: 0px;
 					width: 0;
 					height: 0;
 					border-style: solid;
-					border-width: 40px 40px 0px 40px;
-					border-color: transparent transparent transparent var(--beige-100-bg-color);
+					border-width: 40px 0px 40px 40px;
+					border-color: var(--beige-100-bg-color) transparent transparent transparent;
 					z-index: 1;
 				}
 			}

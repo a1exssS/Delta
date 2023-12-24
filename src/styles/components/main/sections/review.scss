@@ -1,6 +1,6 @@
 .review {
 	background-color: var(--beige-100-bg-color);
-	padding: 40px 0 140px 0;
+	padding: 140px 0;
 
 	@media (max-width:1300px) {
 		padding: 40px 0 100px 0;
@@ -208,7 +208,7 @@
 
 	&__text {
 		&:not(:first-child) {
-			margin-top: 15px;
+			margin-top: 17px;
 		}
 
 		@media (max-width:1400px) {

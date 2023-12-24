@@ -10,8 +10,8 @@ if (document.querySelector('[data-menu]')) {
 	headerLinks.forEach(event => {
 		event.addEventListener('click', () => {
 			if (menu) {
-				menu.dataset.menu = 'close'
-				enableBodyScroll(menu)
+				menu.dataset.menu = 'open'
+				disableBodyScroll(menu)
 				openButton.innerHTML = `
 					<svg width="32px" height="32px">
 						<use xlink:href="../src/Images/sprite.svg#close" />
@@ -30,6 +30,10 @@ if (document.querySelector('[data-menu]')) {
 				</svg>`
 		} else {
 			if (menu) {
+				window.scrollTo({
+					top: 0,
+					behavior: 'smooth'
+				})
 				menu.dataset.menu = 'open'
 				disableBodyScroll(menu)
 				openButton.innerHTML = `

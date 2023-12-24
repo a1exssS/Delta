@@ -27,12 +27,29 @@
 		}
 	}
 
+	&__title_margin {
+		margin-bottom: 40px;
+
+		@media (max-width:739px) {
+			margin-bottom: 30px;
+		}
+
+		@media (max-width:575px) {
+			font-size: 28px;
+			line-height: 100%;
+		}
+	}
+
 	&__box {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-
+		margin-top: 20px;
 		overflow: auto;
+
+		&:last-child {
+			margin-top: 0;
+		}
 	}
 
 	&__item {
@@ -73,8 +90,6 @@
 		background-color: var(--beige-100-bg-color);
 		display: grid;
 		grid-template-columns: repeat(5, minmax(230px, 345px));
-		min-height: 80px;
-
 	}
 
 	&__dropdown-item-text {
@@ -83,6 +98,11 @@
 		display: flex;
 		align-items: center;
 		border-bottom: 1px solid var(--dark-beige-border-color);
+
+		&:first-child {
+			display: flex;
+			align-items: flex-start;
+		}
 
 
 		li {
@@ -99,7 +119,7 @@
 		background-color: var(--beige-200-bg-color);
 		color: var(--brown-text-color);
 		border-bottom: 1px solid var(--dark-beige-border-color);
-		padding: 24.5px 20px;
+		padding: 23.5px 20px;
 		text-align: start;
 		transition: background-color .1s linear;
 
@@ -109,6 +129,11 @@
 		}
 	}
 
+	&__button_color {
+		background-color: var(--beige-300-bg-color);
+
+	}
+
 	&__table {
 		background-color: var(--beige-100-bg-color);
 		display: grid;
@@ -116,6 +141,13 @@
 		border-bottom: 1px solid var(--dark-beige-border-color);
 		min-height: 100px;
 		overflow: auto;
+
+		&:first-child {
+			.pricing__table-text {
+				border-top: 1px solid var(--bright-brown-bg-color);
+
+			}
+		}
 	}
 
 	&__table-text {
@@ -167,7 +199,6 @@
 	&__table-text {}
 
 	&__table-secondary {
-		margin-top: 20px;
 		display: grid;
 		grid-template-columns: minmax(240px, 240px) repeat(3, minmax(166px, 500px));
 		min-height: 66px;
@@ -175,6 +206,17 @@
 		&:first-child {
 			span {
 				background-color: var(--beige-200-bg-color);
+
+				@media (max-width:919px) {
+					height: 115px;
+
+					span {
+						height: 100%;
+						display: flex;
+						align-items: end;
+					}
+				}
+
 			}
 
 			min-height: 90px;
@@ -187,19 +229,32 @@
 		&:last-child {
 			span:last-child {
 				grid-column: span 3;
+				font-size: 16px;
 				color: var(--black-bg-color);
 			}
 		}
 	}
 
 	&__table-secondar-text {
+		justify-content: space-between;
+
 		&:first-child {
 			align-items: start;
 			text-align: start;
 			color: var(--black-bg-color);
+			font-size: 16px;
 		}
 
 		border-bottom: 1px solid var(--dark-beige-border-color);
+
+		&:not(:first-child) {
+			font-size: 20px;
+
+			@media (max-width:919px) {
+
+				font-size: 16px;
+			}
+		}
 
 		width: 100%;
 		display: flex;

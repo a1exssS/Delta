@@ -1,13 +1,13 @@
 .policy {
 	background-color: var(--beige-100-bg-color);
-	padding: 40px 0 140px 0;
+	padding: 35px 0 140px 0;
 
 	@media (max-width:1300px) {
-		padding: 40px 0 100px 0;
+		padding: 35px 0 100px 0;
 	}
 
 	@media (max-width:739px) {
-		padding: 40px 0 70px 0;
+		padding: 35px 0 70px 0;
 	}
 
 	&__container {}
@@ -35,7 +35,7 @@
 		width: 100%;
 
 		&:not(:first-child) {
-			margin-top: 40px;
+			margin-top: 43px;
 
 			@media (max-width:739px) {
 				margin-top: 30px;
@@ -54,9 +54,11 @@
 
 	&__text {
 		margin-top: 10px;
+		font-size: 20px;
 
 		@media (max-width:1300px) {
-			font-size: 24px;
+			font-size: 16px;
+			line-height: 160%;
 		}
 	}
 

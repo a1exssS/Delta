@@ -1,5 +1,21 @@
 .get-to-know {
 	background: var(--beige-200-bg-color);
+	margin-top: 130px;
+
+	@media (max-width:1300px) {
+		margin-top: 100px;
+
+	}
+
+	@media (max-width:991px) {
+		margin-top: 80px;
+
+	}
+
+	@media (max-width:739px) {
+		margin-top: 60px;
+
+	}
 
 	&__container {
 		min-height: 400px;
@@ -20,6 +36,7 @@
 		@media (max-width:739px) {
 			min-height: 490px;
 			gap: 0px;
+			padding: 40px 0 60px 0;
 			grid-template-columns: 1fr;
 		}
 	}
@@ -53,7 +70,7 @@
 			&::before {
 				content: '';
 				position: absolute;
-				top: 0px;
+				top: 20px;
 				left: 0px;
 				width: 0;
 				height: 0;
@@ -65,13 +82,17 @@
 			&::after {
 				content: '';
 				position: absolute;
-				bottom: 0px;
+				bottom: 20px;
 				right: 0px;
 				width: 0;
 				height: 0;
 				border-style: solid;
 				border-width: 40px 0px 40px 40px;
-				border-color: transparent transparent var(--beige-200-bg-color) transparent
+				border-color: transparent transparent var(--beige-200-bg-color) transparent;
+
+				@media (max-width:739px) {
+					bottom: 0px;
+				}
 			}
 
 		}
@@ -89,6 +110,10 @@
 
 		@media (max-width:991px) {
 			font-size: 24px;
+		}
+
+		@media (max-width:739px) {
+			margin-top: 30px;
 		}
 	}
 

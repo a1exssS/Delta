@@ -38,11 +38,15 @@ if (document.querySelector('.filter__dropdown-inputs-size')) {
 				}
 			}
 			else {
+				function calc(number, min, max) {
+					return ((number - min) / (max - min)) * 100
+				}
+				const minRange = 35;
+				const maxRange = 400;
 				inputSizeField[0].value = minVal
 				inputSizeField[1].value = maxVal
-				console.log(100 - (maxVal / rangeSizeInput[1].max) * 100 + 3 + "%")
-				sizeProgress.style.left = (minVal / rangeSizeInput[0].max) * 100 - 7 + "%"
-				sizeProgress.style.right = 100 - (maxVal / rangeSizeInput[1].max) * 100 + 2 + "%"
+				sizeProgress.style.left = Math.round(calc(inputSizeField[0].value, minRange, maxRange)) + "%"
+				sizeProgress.style.right = 100 - Math.round(calc(inputSizeField[1].value, minRange, maxRange)) + "%"
 			}
 
 		})
@@ -77,10 +81,15 @@ if (document.querySelector('.filter__dropdown-inputs-size')) {
 				}
 			}
 			else {
+				function calc(number, min, max) {
+					return ((number - min) / (max - min)) * 100
+				}
+				const minRange = 1470000;
+				const maxRange = 22690000;
 				inputPriceField[0].value = minVal
 				inputPriceField[1].value = maxVal
-				priceProgress.style.left = (minVal / rangePriceInput[0].max) * 100 + "%"
-				priceProgress.style.right = 100 - (maxVal / rangePriceInput[1].max) * 100 + "%"
+				priceProgress.style.left = Math.round(calc(inputPriceField[0].value, minRange, maxRange)) + "%"
+				priceProgress.style.right = 100 - Math.round(calc(inputPriceField[1].value, minRange, maxRange)) + "%"
 			}
 
 		})

@@ -1,5 +1,5 @@
 .footer {
-	min-height: 422px;
+	padding: 60px 0;
 	display: flex;
 	align-items: center;
 	background-color: var(--brown-bg-color);
@@ -8,11 +8,11 @@
 	z-index: 2;
 
 	@media (max-width:1100px) {
-		min-height: 608px;
+		padding: 40px 0;
 	}
 
-	@media (max-width:650px) {
-		min-height: 617px;
+	@media (max-width:739px) {
+		padding: 35px 0 40px 0;
 	}
 
 	&__image-link {
@@ -21,7 +21,6 @@
 
 	&__container {
 		width: 100%;
-		margin-top: 20px;
 	}
 
 	&__items {
@@ -42,7 +41,7 @@
 		opacity: .6;
 		margin-top: 40px;
 		position: relative;
-		bottom: 20px;
+		bottom: 10px;
 
 		@media (max-width:1100px) {
 			margin-top: 30px;
@@ -54,7 +53,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: start;
-		margin-top: 10px;
+		margin-top: 15px;
 		order: 2;
 
 		@media (max-width:1100px) {
@@ -76,7 +75,7 @@
 		&:first-child {
 			display: grid;
 			grid-template-columns: minmax(10px, 320px) minmax(10px, 320px);
-			column-gap: 60px;
+			column-gap: 55px;
 
 			@media (max-width:1400px) {
 				column-gap: 80px;
@@ -140,7 +139,7 @@
 		display: inline-block;
 		margin-top: 40px;
 		position: relative;
-		bottom: 20px;
+		bottom: 15px;
 
 		@media (max-width:1500px) {
 			font-size: 16px;
@@ -227,7 +226,7 @@
 		text-wrap: nowrap;
 		margin-top: auto;
 		position: relative;
-		bottom: 20px;
+		bottom: 15px;
 
 		@media (max-width:1500px) {
 			font-size: 16px;
@@ -251,6 +250,7 @@
 		flex-direction: column;
 		align-items: start;
 		gap: 25px;
+		margin-top: 10px;
 
 	}
 

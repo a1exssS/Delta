@@ -1,13 +1,13 @@
 .built-house {
 	background-color: var(--beige-100-bg-color);
-	padding: 40px 0 140px 0;
+	padding: 35px 0 140px 0;
 
 	@media (max-width:1300px) {
 		padding: 40px 0 100px 0;
 	}
 
 	@media (max-width:739px) {
-		padding: 40px 0 70px 0;
+		padding: 30px 0 60px 0;
 	}
 
 	&__title {
@@ -33,7 +33,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 60px;
-		margin-top: 40px;
+		margin-top: 35px;
 
 		@media (max-width:1400px) {
 			margin-top: 50px;
@@ -56,7 +56,6 @@
 		align-items: center;
 		flex-wrap: wrap;
 		row-gap: 10px;
-		max-width: 60%;
 	}
 
 	&__item-box {

@@ -1,6 +1,6 @@
 .advancements {
 	min-height: auto;
-	padding: 140px 0;
+	padding: 140px 0 110px 0;
 	height: 100%;
 	background-color: var(--bright-brown-bg-color);
 
@@ -148,7 +148,7 @@
 			height: 100%;
 			background-color: var(--bright-brown-bg-color);
 			position: absolute;
-			right: -15px;
+			right: -20px;
 			top: 0;
 			bottom: 0;
 			display: block;
@@ -156,7 +156,7 @@
 	}
 
 	&__text {
-		margin-left: 40px;
+		margin-left: 60px;
 
 		@media (max-width:1400px) {
 			font-size: 20px;

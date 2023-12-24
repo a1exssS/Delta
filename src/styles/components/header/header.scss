@@ -139,7 +139,7 @@
 		}
 
 		@media(max-width: 739px) {
-			position: relative;
+
 			transition: .1s ease;
 			position: fixed;
 			top: 121px;
@@ -152,109 +152,89 @@
 			flex-direction: column;
 			justify-content: center;
 			flex-grow: 1;
-			opacity: 0;
+			transform: translateX(100%);
 			pointer-events: none;
-			transition: .3s ease-in-out;
-			transition-property: opacity;
+			transition: all .3s ease-in-out;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
 
 
-			&[data-menu="open"] {
-				opacity: 1;
-				pointer-events: auto;
+			.header__box {
+				position: absolute;
+				top: 25px;
+				right: 20px;
+				order: 1;
+				z-index: 1;
+				display: flex;
+				flex-direction: column;
+				align-items: start;
 
-				display: grid;
-				grid-template-columns: 1fr 1fr;
+			}
 
-				.header__box {
-					position: absolute;
-					top: 25px;
-					right: 20px;
-					order: 1;
+			.header__item {
+				display: flex;
+				margin: 0;
+
+				&:first-child {
+					margin-bottom: 20px;
+				}
+
+				&:nth-child(3) {
+					margin-top: 20px;
+				}
+
+				button {
+
+					position: relative;
+					bottom: -40%;
+					left: 10px;
+					right: 10px;
+
+					@media (max-height:580px) {
+						bottom: 20px;
+					}
+
+					@media (max-height:480px) {
+						bottom: 10px;
+					}
+				}
+			}
+
+			nav {
+				display: flex;
+				flex-direction: column;
+				overflow: auto;
+				align-items: start;
+				text-wrap: nowrap;
+				height: 100%;
+				position: absolute;
+				top: 25px;
+				left: 0;
+				width: 100%;
+
+				@media (max-height:550px) {
+					height: 400px;
+				}
+
+				div {
+					margin: 0 10px;
 					display: flex;
-					flex-direction: column;
 					align-items: start;
-
-					@media (max-height:550px) {
-						top: 10px;
-						overflow: auto;
-						height: 400px;
-					}
-
-				}
-
-				.header__item {
-					display: flex;
-					margin: 0;
-
-					&:first-child {
-						margin-bottom: 20px;
-
-						@media (max-height:580px) {
-							margin-bottom: 5px;
-						}
-					}
-
-					&:nth-child(3) {
-						margin-top: 20px;
-
-						@media (max-height:580px) {
-							margin-top: 5px;
-						}
-					}
-
-					button {
-
-						position: relative;
-						bottom: -40%;
-						left: 10px;
-						right: 10px;
-
-						@media (max-height:680px) {
-							bottom: 50px;
-						}
-
-						@media (max-height:580px) {
-							bottom: 20px;
-						}
-
-						@media (max-height:480px) {
-							bottom: 10px;
-						}
-					}
-				}
-
-				nav {
-					display: flex;
 					flex-direction: column;
 					overflow: auto;
-					align-items: start;
-					text-wrap: nowrap;
 					height: 100%;
-					position: absolute;
-					top: 25px;
-					left: 0;
-					width: 100%;
+					position: relative;
+					top: 0px;
 
-					@media (max-height:550px) {
-						top: 10px;
-						overflow: auto;
-						height: 400px;
-					}
 
-					div {
-						margin: 0 10px;
-						display: flex;
-						align-items: start;
-						flex-direction: column;
-						overflow: auto;
-						height: 100%;
-						gap: 25px;
-
-						@media (max-height:580px) {
-							gap: 15px;
-						}
-					}
 				}
+			}
+
+			&[data-menu="open"] {
+				transform: translateX(0%);
+				pointer-events: auto;
+
+
 			}
 
 		}
@@ -363,12 +343,9 @@
 
 		}
 
-		@media (max-height:650px) {
-			bottom: 60px;
-		}
 
 		@media (max-height:550px) {
-			bottom: 60px;
+			bottom: 20px;
 		}
 
 		&:before {
@@ -447,13 +424,10 @@
 		}
 	}
 
-	&__items_position {
-		top: 115px;
-	}
-
 }
 
 .navigation {
+	transition: .1s linear;
 	background-color: var(--beige-200-bg-color);
 	border-top: 1px solid var(--dark-beige-border-color);
 
@@ -466,7 +440,7 @@
 		flex-wrap: nowrap;
 		align-items: center;
 		height: 40px;
-		gap: 40px;
+		gap: 30px;
 
 		@media (max-width:1239px) {
 			gap: 30px;
@@ -484,6 +458,7 @@
 		display: flex;
 		text-wrap: nowrap;
 		flex-wrap: nowrap;
+		white-space: nowrap;
 		display: inline-block;
 		color: var(--black-text-color);
 		transition: .2s linear;
@@ -529,11 +504,11 @@
 	}
 
 	&__move {
+
 		@media (min-width:740px) {
 
 			position: sticky;
 			z-index: 1000;
-			transform: translateY(-20px);
 			top: 0;
 			border: 0;
 			background-color: var(--brown-bg-color);
@@ -575,8 +550,8 @@
 
 				&::before {
 					content: '';
-					transition: .2s linear;
 					opacity: 0;
+					transition: .2s linear;
 					pointer-events: none;
 					background-color: var(--bright-beige-text-color);
 					width: 10px;

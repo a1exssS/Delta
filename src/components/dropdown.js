@@ -1,12 +1,12 @@
 function adjustDropdownPosition(dropdown) {
-	const dropdownContent = dropdown.querySelector('.filter__dropdown-box');
+	const dropdownContent = dropdown.querySelector('.filter__dropdown');
 	if (!dropdownContent) return;
 
 	const dropdownRect = dropdownContent.getBoundingClientRect();
 	const spaceRight = window.innerWidth - dropdownRect.right;
 	const spaceLeft = dropdownRect.left;
 
-	if (spaceRight < 0 && spaceLeft >= dropdownRect.width) {
+	if (spaceLeft >= dropdownRect.width) {
 		dropdownContent.style.right = '0';
 		dropdownContent.style.left = 'auto';
 	} else {

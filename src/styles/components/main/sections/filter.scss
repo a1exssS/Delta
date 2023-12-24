@@ -7,7 +7,7 @@
 	}
 
 	@media (max-width:739px) {
-		padding: 40px 0 0 0;
+		padding: 30px 0 0 0;
 	}
 
 	&__container {}
@@ -72,7 +72,7 @@
 	}
 
 	&__form {
-		margin-top: 50px;
+		margin-top: 45px;
 
 		@media (max-width:1400px) {
 			margin-top: 40px;
@@ -136,12 +136,15 @@
 		top: calc(100% + .25rem);
 		background-color: var(--white-bg-color);
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
-		transform: translateY(-10px);
-		transition: .2s linear;
 		opacity: 0;
 		pointer-events: none;
 		z-index: 4;
 		display: none;
+
+		@media (max-width:739px) {
+			background-color: var(--beige-100-bg-color);
+
+		}
 
 	}
 
@@ -165,6 +168,7 @@
 
 	&__form-close-menu {
 		height: 120px;
+		border-bottom: 1px solid var(--dark-beige-border-color);
 
 		@media (min-width:740px) {
 			display: none;
@@ -217,28 +221,27 @@
 		}
 	}
 
-
 	&__form-box {
 		@media(max-width: 739px) {
 			position: relative;
 
 			.filter__options {
+				display: flex;
 				background-color: var(--beige-100-bg-color);
 				position: relative;
-				transition: .1s ease;
 				position: fixed;
 				top: 0px;
 				left: 0;
 				right: 0;
 				bottom: 0;
-				z-index: 100;
+				z-index: 101;
 				align-items: center;
 				flex-direction: column;
 				justify-content: center;
 				flex-grow: 1;
 				opacity: 0;
 				pointer-events: none;
-				transition: .3s ease-in-out;
+				transition: .2s linear;
 				transition-property: opacity;
 				margin: 0;
 				align-items: start;
@@ -357,10 +360,12 @@
 				.text-sm-bold {}
 
 				.filter__reset-button {
-					width: 48px;
-					height: 48px;
+					width: 49px;
+					height: 49px;
 					align-items: center;
 					justify-content: center;
+					display: none;
+
 				}
 
 				.filter__option {
@@ -396,18 +401,10 @@
 		transition: .2s linear;
 
 		&.active {
-			background-color: var(--bright-brown-bg-color);
+			background-color: var(--beige-300-bg-color);
 
-			&:not(:nth-child(2)) {
-				background-color: var(--beige-300-bg-color);
-
-				svg {
-					color: var(--bright-brown-bg-color);
-				}
-
-				.filter__option-name {
-					color: var(--bright-brown-bg-color);
-				}
+			.filter__option-name {
+				color: var(--bright-brown-bg-color);
 			}
 
 			&:nth-child(5) {
@@ -420,17 +417,14 @@
 				.filter__option-name {
 					color: var(--bright-brown-bg-color);
 				}
+
 			}
 
 			svg {
-				color: var(--white-bg-color);
+				color: var(--bright-brown-bg-color);
 				transform: rotate(180deg);
 			}
 
-			button {
-				color: var(--white-bg-color);
-				display: flex;
-			}
 
 			.filter__dropdown {
 				opacity: 1;
@@ -536,12 +530,13 @@
 
 	&__options-item_show {
 		position: sticky;
+		z-index: 5;
 		bottom: 0;
 		padding: 10px;
-		background-color: var(--beige-100-bg-color);
+		background-color: var(--white-bg-color);
 		display: flex;
 		border: 0;
-		flex-grow: 1;
+		margin-top: auto;
 		align-items: self-end;
 
 		button {
@@ -587,7 +582,7 @@
 
 	&__dropdown-box {
 		&:first-child {
-			max-height: 204px;
+			max-height: 250px;
 			overflow: auto;
 
 			@media (max-width:739px) {
@@ -624,8 +619,8 @@
 	&__dropdown-item {
 		display: flex;
 		flex-direction: column;
-		padding: 20px;
-		gap: 10px;
+		padding: 30px 25px;
+		gap: 13px;
 	}
 
 	&__dropdown-label {
@@ -684,7 +679,7 @@
 		height: 14px;
 		transition: .2s linear;
 		border: none;
-		margin-right: 10px;
+		margin-right: 15px;
 		-webkit-box-shadow: 0px 0px 0px 2px var(--black-bg-color);
 		-moz-box-shadow: 0px 0px 0px 2px var(--black-bg-color);
 		box-shadow: 0px 0px 0px 2px var(--black-bg-color);
@@ -820,6 +815,9 @@
 		input[type="range"]::-moz-range-thumb {
 			height: 16px;
 			width: 16px;
+			position: relative;
+			left: -5px;
+			top: -5px;
 			transform: rotate(45deg);
 			-moz-appearance: none;
 			border: 0;
@@ -831,6 +829,9 @@
 			border: 0;
 			height: 16px;
 			width: 16px;
+			position: relative;
+			left: 0px;
+			top: -3px;
 			transform: rotate(45deg);
 			-webkit-appearance: none;
 			pointer-events: auto;

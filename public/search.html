@@ -141,6 +141,7 @@
 					</div>
 					<div class="filter__form-box" data-search="close">
 						<div class="filter__options">
+
 							<div class="filter__form-close-menu">
 								<span class="text-lg-bold">
 									<svg width="25px" height="24px">
@@ -292,9 +293,9 @@
 											</div>
 											<div class="filter__dropdown-range-inputs filter__dropdown-inputs-size">
 												<input type="range" class="filter__dropdown-range-input-min range-size-min" min="35"
-													max="400" value="35" step="1">
+													max="400" value="35" step="1" data-size-range-min="35">
 												<input type="range" class="filter__dropdown-range-input-max range-size-max" min="35"
-													max="400" value="400" step="1">
+													max="400" value="400" data-size-range-max="400" step="1">
 											</div>
 
 										</div>
@@ -321,7 +322,7 @@
 										</svg>
 									</button>
 								</div>
-								<div class="filter__dropdown">
+								<div class="filter__dropdown filter__dropdown_position">
 									<div class="filter__dropdown-box">
 										<div class="filter__dropdown-item">
 											<div class="filter__dropdown-range-field filter__dropdown-range-price">
@@ -337,9 +338,11 @@
 											</div>
 											<div class="filter__dropdown-range-inputs filter__dropdown-inputs-price">
 												<input type="range" class="filter__dropdown-range-input-min range-price-min"
-													min="1470000" max="22690000" value="1470000" step="1000">
+													min="1470000" max="22690000" value="1470000" data-price-range-min="1470000"
+													step="1000">
 												<input type="range" class="filter__dropdown-range-input-max range-price-max"
-													min="1470000" max="22690000" value="22690000" step="1000">
+													min="1470000" max="22690000" data-price-range-max="22690000" value="22690000"
+													step="1000">
 											</div>
 
 										</div>
@@ -445,7 +448,7 @@
 								</button>
 							</div>
 							<div class="filter__options-item filter__options-item_postion">
-								<button type="button" class="filter__option">
+								<button type="button" class="filter__option filter__button-submit">
 									<svg width="16px" height="16px">
 										<use xlink:href="../src/Images/sprite.svg#small-close" />
 									</svg>
