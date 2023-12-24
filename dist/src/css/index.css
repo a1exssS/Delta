@@ -4823,9 +4823,15 @@ body {
 	}
 }
 
+@media (max-width: 919px) {
+	.documents__title {
+		font-size: 40px;
+	}
+}
+
 @media (max-width: 739px) {
 	.documents__title {
-		font-size: 32px;
+		font-size: 28px;
 		padding: 0 10px
 	}
 }
