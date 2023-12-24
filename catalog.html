@@ -8,8 +8,8 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	<title>Document</title>
-	<script type="module" crossorigin src="./src/js/index-9G6_5U5f.js"></script>
-	<link rel="stylesheet" crossorigin href="./src/css/index-eNpVLg3K.css">
+	<script type="module" crossorigin src="./src/js/index.js"></script>
+	<link rel="stylesheet" crossorigin href="./src/css/index.css">
 </head>
 
 <body>
@@ -111,8 +111,8 @@
 				<div class="catalog__items">
 					<div class="catalog__item">
 						<picture>
-							<source loading="lazy" srcset="./src/Images/catalog_image2.webp" />
-							<img loading="lazy" src="./src/Images/catalog_image2.jpg" alt="изображение из каталога"
+							<source loading="lazy" srcset="./src/Images/catalog_image1.webp" />
+							<img loading="lazy" src="./src/Images/catalog_image1.jpg" alt="изображение из каталога"
 								class="catalog__image">
 						</picture>
 						<div class="catalog__link-box">
@@ -125,8 +125,8 @@
 					</div>
 					<div class="catalog__item">
 						<picture>
-							<source loading="lazy" srcset="./src/Images/catalog_image1.webp" />
-							<img loading="lazy" src="./src/Images/catalog_image1.jpg" alt="изображение из каталога"
+							<source loading="lazy" srcset="./src/Images/catalog_image2.webp" />
+							<img loading="lazy" src="./src/Images/catalog_image2.jpg" alt="изображение из каталога"
 								class="catalog__image">
 						</picture>
 						<div class="catalog__link-box">
@@ -139,6 +139,32 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</section>
+		<section class="request">
+			<div class="container request__container">
+				<h2 class="request__title h2-lg-bold">Оставьте заявку</h2>
+				<div class="request__item">
+					<span class="request__text text-md">Мы свяжемся с Вами в ближайшее время</span>
+					<span class="request__text text-md">
+						Отправляя заявку, вы соглашаетесь с 
+						<a href="" class="request__link">
+							Политикой обработки персональных данных.
+						</a>
+					</span>
+				</div>
+				<form action="" class="request__form">
+					<label for="name">
+						<input id="name" name="name" type="text" placeholder="Ваше имя" class="request__input">
+					</label>
+					<label for="email">
+						<input id="email" name="email" type="email" placeholder="E-mail *" class="request__input">
+					</label>
+					<label for="phone">
+						<input type="text" id="phone" name="phone" placeholder="+7 999 999 99 99 *" class="request__input">
+					</label>
+					<button class="request__button click-md-bold" type="submit">Отправить</button>
+				</form>
 			</div>
 		</section>
 	</main>
@@ -242,5 +268,6 @@
 	</div>
 
 </body>
+
 
 </html>
