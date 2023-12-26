@@ -40,4 +40,7 @@ if (document.querySelector('.advancements__item')) {
 		}
 	)
 }
-
+document.querySelector('.footer__go-back').addEventListener('click', (e) => {
+	e.preventDefault()
+	window.scrollTo({ top: 0, behavior: 'smooth' })
+})

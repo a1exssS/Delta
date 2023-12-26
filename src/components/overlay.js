@@ -1,5 +1,6 @@
 
 const closeButton = document.querySelectorAll('.overlay__close-button')
+const submitOverlayButton = document.querySelectorAll('.overlay__button')
 const overlayBox = document.querySelector('.overlay-box')
 overlayBox.style.display = 'none'
 

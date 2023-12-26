@@ -115,4 +115,36 @@
 		}
 	}
 
+	label.error {
+		border: 1px solid var(--red-error-bg-color);
+
+		&::after {
+			border-left: 1px solid var(--red-error-bg-color);
+		}
+
+		input::placeholder {
+			color: var(--light-red-error-bg-color);
+		}
+
+		input::-ms-input-placeholder {
+			color: var(--light-red-error-bg-color);
+		}
+	}
+
+}
+
+label.error {
+	border: 1px solid var(--red-error-bg-color);
+
+	&::after {
+		border-left: 1px solid var(--red-error-bg-color);
+	}
+
+	input::placeholder {
+		color: var(--light-red-error-bg-color);
+	}
+
+	input::-ms-input-placeholder {
+		color: var(--light-red-error-bg-color);
+	}
 }

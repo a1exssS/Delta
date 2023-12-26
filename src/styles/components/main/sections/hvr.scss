@@ -1,5 +1,7 @@
 .hvr {
 
+	transition: .2s linear;
+
 	@media (max-width:991px) {
 		display: none;
 	}

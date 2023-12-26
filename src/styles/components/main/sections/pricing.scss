@@ -134,6 +134,17 @@
 
 	}
 
+	&__box-position {
+		position: sticky;
+		top: 40px;
+		z-index: 10;
+
+		@media (max-width:739px) {
+			top: 0;
+		}
+
+	}
+
 	&__table {
 		background-color: var(--beige-100-bg-color);
 		display: grid;
@@ -141,6 +152,13 @@
 		border-bottom: 1px solid var(--dark-beige-border-color);
 		min-height: 100px;
 		overflow: auto;
+		position: sticky;
+		top: 40px;
+		z-index: 10;
+
+		@media (max-width:739px) {
+			top: 0;
+		}
 
 		&:first-child {
 			.pricing__table-text {
