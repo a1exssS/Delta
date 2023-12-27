@@ -12,6 +12,7 @@
 	<link rel="stylesheet" crossorigin href="./src/css/index.css">
 </head>
 
+
 <body>
 	<header class="header">
 		<div class="header__container container">
@@ -25,12 +26,13 @@
 			<div class="header__items" data-menu="close">
 				<div class="header__box">
 					<div class="header__item header__item-mr97">
-						<a href="" class="header__item-link h3-md-bold">8 981 125 53 52</a>
-						<a href="" class="header__item-link header__item-email text-md">info@vasilekstroy.ru</a>
+						<a href="tel:+89811255352" class="header__item-link h3-md-bold">8 981 125 53 52</a>
+						<a href="mailto:info@vasilekstroy.ru"
+							class="header__item-link header__item-email text-md">info@vasilekstroy.ru</a>
 					</div>
 					<div class="header__item header__item-mr65">
 						<span href="" class="header__item-uplink header__item-uplink_gray text-sm">Бесплатно по России</span>
-						<a href="" class="header__item-link h3-sm-bold">8 800 200 00 82</a>
+						<a href="tel:+88002000082" class="header__item-link h3-sm-bold">8 800 200 00 82</a>
 						<span href="" class="header__item-date text-sm">пн-сб — 9:00-20:00</span>
 					</div>
 					<div class="header__item header__item-socials">
@@ -154,14 +156,17 @@
 					</span>
 				</div>
 				<form action="" class="request__form">
-					<label for="name">
-						<input id="name" name="name" type="text" placeholder="Ваше имя" class="request__input">
+					<label for="request-name" id="name">
+						<input id="request-name" name="request-name" type="text" placeholder="Ваше имя"
+							class="request__input">
 					</label>
-					<label for="email">
-						<input id="email" name="email" type="email" placeholder="E-mail *" class="request__input">
+					<label for="request-email" id="email">
+						<input id="request-email" name="email" type="request-email" placeholder="E-mail *"
+							class="request__input">
 					</label>
-					<label for="phone">
-						<input type="text" id="phone" name="phone" placeholder="+7 999 999 99 99 *" class="request__input">
+					<label for="request-phone" id="phone">
+						<input type="text" id="request-phone" name="request-phone" placeholder="+7 999 999 99 99 *"
+							class="request__input">
 					</label>
 					<button class="request__button click-md-bold" type="submit">Отправить</button>
 				</form>
@@ -174,38 +179,39 @@
 
 				<div class="footer__item">
 					<a href="" class="footer__image-link">
-						<img loading="lazy" src="./src/Images/logo-footer.svg" alt="Логотип" class="footer__image">
+						<img loading="lazy" src="src/Images/logo-footer.svg" alt="Логотип" class="footer__image">
 					</a>
 					<div class="footer__contacts">
-						<a href="" class="footer__phone-link h3-md-bold">8 921 204 51 11</a>
-						<a href="" class="footer__item-link footer__item-email text-md">info@vasilekstroy.ru</a>
+						<a href="tel:+89212045111" class="footer__phone-link h3-md-bold">8 921 204 51 11</a>
+						<a href="mailto:info@vasilekstroy.ru"
+							class="footer__item-link footer__item-email text-md">info@vasilekstroy.ru</a>
 					</div>
 					<div class="footer__items-socials">
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./src/Images/sprite.svg#vk" />
+								<use xlink:href="src/Images/sprite.svg#vk" />
 							</svg>
 						</a>
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./src/Images/sprite.svg#instagram" />
+								<use xlink:href="src/Images/sprite.svg#instagram" />
 							</svg>
 						</a>
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./src/Images/sprite.svg#whatsapp" />
+								<use xlink:href="src/Images/sprite.svg#whatsapp" />
 							</svg>
 						</a>
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="./src/Images/sprite.svg#viber" />
+								<use xlink:href="src/Images/sprite.svg#viber" />
 							</svg>
 						</a>
 					</div>
 					<div class="footer__work-time">
 						<span class="footer__item-uplink text-sm">Бесплатно по России</span>
 						<div>
-							<a href="" class="footer__item-link h3-sm-bold">8 800 200 00 82</a>
+							<a href="tel:+88002000082" class="footer__item-link h3-sm-bold">8 800 200 00 82</a>
 							<span href="" class="footer__item-date text-sm">пн-сб — 9:00-20:00</span>
 						</div>
 					</div>
@@ -224,12 +230,12 @@
 				</div>
 				<a href="" class="footer__go-back">
 					<svg width="32px" height="32px">
-						<use xlink:href="./src/Images/sprite.svg#arrow-up" />
+						<use xlink:href="src/Images/sprite.svg#arrow-up" />
 					</svg>
 				</a>
 				<div class="footer__made-by">
 					<svg width="32px" height="32px" class="footer__made-by-image">
-						<use xlink:href="./src/Images/sprite.svg#art-gorka" />
+						<use xlink:href="src/Images/sprite.svg#art-gorka" />
 					</svg>
 					<span class="footer__made-by-text text-sm">Сделано в ART Gorka</span>
 				</div>
@@ -248,11 +254,11 @@
 					<h3 class="h3-lg-bold overlay__title">Заявка на обратный звонок</h3>
 					<span class="overlay__text text-md">Заполните форму, мы перезвоним Вам в ближайшее время</span>
 					<form action="" class="overlay__form">
-						<label for="overlay-name">
+						<label for="overlay-name" id="name">
 							<input id="overlay-name" placeholder="Ваше имя" name="overlay-name" type="text"
 								class="overlay__input">
 						</label>
-						<label for="overlay-phone">
+						<label for="overlay-phone" id="phone">
 							<input id="overlay-phone" placeholder="+7 999 999 99 99 *" name="overlay-phone" type="text"
 								class="overlay__input">
 						</label>
@@ -265,9 +271,23 @@
 				</div>
 			</div>
 		</div>
+		<div class="overlay" id="success-overlay">
+			<div class="overlay__holder">
+				<button class="overlay__close-button">
+					<svg width="32px" height="32px">
+						<use xlink:href="./src/Images/sprite.svg#close" />
+					</svg>
+				</button>
+				<div class="popup">
+					<h3 class="h3-lg-bold overlay__title">Заявка отправлена</h3>
+					<span class="overlay__text text-md">Спасибо, что обратились к нам! Уже изучаем Вашу заявку.</span>
+					<button class="overlay__button overlay__button_success">Хорошо</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </body>
-
+<script type="module" src="./src/main.ts"></script>
 
 </html>
