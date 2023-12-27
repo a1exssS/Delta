@@ -66,12 +66,7 @@ document.querySelectorAll('form').forEach(form => {
 			email = inputRequestEmail.querySelector('input').value
 		}
 
-		const name = validateName(inputRequestName.querySelector('input').value);
 		const phone = inputRequestPhone.querySelector('input').value
-
-		if (!name) {
-			inputRequestName.classList.add('error');
-		}
 
 		if (inputRequestEmail && (!email || !validateEmail(email))) {
 			inputRequestEmail.classList.add('error');
@@ -83,7 +78,7 @@ document.querySelectorAll('form').forEach(form => {
 
 		let emailValidation = email ? true : inputRequestEmail ? false : true
 
-		if (name && emailValidation && phone && validatePhoneNumber(phone)) {
+		if (emailValidation && phone && validatePhoneNumber(phone)) {
 			inputRequestName.querySelector('input').value = '';
 			if (inputRequestEmail) {
 				inputRequestEmail.querySelector('input').value = '';

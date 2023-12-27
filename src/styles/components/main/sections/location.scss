@@ -31,10 +31,8 @@
 		}
 	}
 
-
-	&__map-holder {
-
-		overflow: hidden;
+	[class*="copyrights-pane"] {
+		display: none !important;
 	}
 
 	&__item {
@@ -78,21 +76,16 @@
 		}
 	}
 
-	&__image {
+	&__map-holder {
+		overflow: hidden;
 		height: 500px;
-		object-fit: cover;
-		object-position: center;
-		width: 100%;
 
-		@media (max-width:919px) {
-			min-height: 240px;
-			max-height: 360px;
-			transform: scale(1.5);
+		@media (max-width:991px) {
+			height: 360px;
 		}
 
 		@media (max-width:575px) {
-			transform: scale(2);
-			max-height: 240px;
+			height: 240px;
 		}
 	}
 }

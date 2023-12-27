@@ -147,7 +147,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="projects projects_position">
+		<section class="projects projects-lightbox projects_position">
 			<div class="container projects__container">
 				<h2 class="projects__title h2-lg-bold">
 					Фото объекта
@@ -158,9 +158,9 @@
 				</h2>
 				<div class="projects__box">
 					<div class="swiper projects__swiper myProjectsSwiper">
-						<div class="swiper-wrapper projects__swiper-wrapper">
+						<div class="swiper-wrapper projects__swiper-wrapper gallery">
 
-							<div class="swiper-slide projects__swiper-slide">
+							<a href="../src/Images/built-house_img.jpg" class="swiper-slide projects__swiper-slide">
 								<div class="projects__item projects__item_scale">
 									<div class="projects__image-box projects__image-box_size">
 										<picture>
@@ -170,8 +170,8 @@
 										</picture>
 									</div>
 								</div>
-							</div>
-							<div class="swiper-slide projects__swiper-slide">
+							</a>
+							<a href="../src/Images/built-house_img.jpg" class="swiper-slide projects__swiper-slide">
 								<div class="projects__item projects__item_scale">
 									<div class="projects__image-box projects__image-box_size">
 										<picture>
@@ -181,8 +181,8 @@
 										</picture>
 									</div>
 								</div>
-							</div>
-							<div class="swiper-slide projects__swiper-slide">
+							</a>
+							<a href="../src/Images/built-house_img.jpg" class="swiper-slide projects__swiper-slide">
 								<div class="projects__item projects__item_scale">
 									<div class="projects__image-box projects__image-box_size">
 										<picture>
@@ -192,8 +192,8 @@
 										</picture>
 									</div>
 								</div>
-							</div>
-							<div class="swiper-slide projects__swiper-slide">
+							</a>
+							<a href="../src/Images/built-house_img.jpg" class="swiper-slide projects__swiper-slide">
 								<div class="projects__item projects__item_scale">
 									<div class="projects__image-box projects__image-box_size">
 										<picture>
@@ -203,8 +203,8 @@
 										</picture>
 									</div>
 								</div>
-							</div>
-							<div class="swiper-slide projects__swiper-slide">
+							</a>
+							<a href="../src/Images/built-house_img.jpg" class="swiper-slide projects__swiper-slide">
 								<div class="projects__item projects__item_scale">
 									<div class="projects__image-box projects__image-box_size">
 										<picture>
@@ -214,8 +214,8 @@
 										</picture>
 									</div>
 								</div>
-							</div>
-							<div class="swiper-slide projects__swiper-slide">
+							</a>
+							<a href="../src/Images/built-house_img.jpg" class="swiper-slide projects__swiper-slide">
 								<div class="projects__item projects__item_scale">
 									<div class="projects__image-box projects__image-box_size">
 										<picture>
@@ -225,8 +225,8 @@
 										</picture>
 									</div>
 								</div>
-							</div>
-							<div class="swiper-slide projects__swiper-slide">
+							</a>
+							<a href="../src/Images/built-house_img.jpg" class="swiper-slide projects__swiper-slide">
 								<div class="projects__item projects__item_scale">
 									<div class="projects__image-box projects__image-box_size">
 										<picture>
@@ -236,8 +236,8 @@
 										</picture>
 									</div>
 								</div>
-							</div>
-							<div class="swiper-slide projects__swiper-slide">
+							</a>
+							<a href="../src/Images/built-house_img.jpg" class="swiper-slide projects__swiper-slide">
 								<div class="projects__item projects__item_scale">
 									<div class="projects__image-box projects__image-box_size">
 										<picture>
@@ -247,7 +247,7 @@
 										</picture>
 									</div>
 								</div>
-							</div>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -319,12 +319,7 @@
 			<div class="container location__container">
 				<h2 class="location__title h2-lg-bold">Объект на карте</h2>
 				<div class="location__item">
-					<div class="location__map-holder">
-						<picture>
-							<source loading="lazy" srcset="../src/Images/location_map.webp" />
-							<img loading="lazy" src="../src/Images/location_map.jpg" class="location__image"
-								alt="изображение карты" />
-						</picture>
+					<div class="location__map-holder" id="map">
 					</div>
 				</div>
 			</div>

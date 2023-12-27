@@ -22,6 +22,7 @@ if (document.querySelector('[data-menu]')) {
 	})
 	function toggleMenu() {
 		if (menu && menu.getAttribute('data-menu') === 'open') {
+			menu.style.display = 'unset'
 			menu.dataset.menu = 'close'
 			enableBodyScroll(menu)
 			openButton.innerHTML = `
