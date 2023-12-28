@@ -89,19 +89,19 @@ document.querySelectorAll('form').forEach(form => {
 			const overlay = document.getElementById('success-overlay');
 			if (document.getElementById('consultation-overlay')) {
 				const consultationOverlay = document.getElementById('consultation-overlay')
-				consultationOverlay.style.display = "none"
+				consultationOverlay.classList.remove('active')
 			}
 			if (document.getElementById('project-overlay')) {
 				const consultationOverlay = document.getElementById('project-overlay')
-				consultationOverlay.style.display = "none"
+				consultationOverlay.classList.remove('active')
 			}
 			if (document.getElementById('header-overlay')) {
 				const consultationOverlay = document.getElementById('header-overlay')
-				consultationOverlay.style.display = "none"
+				consultationOverlay.classList.remove('active')
 			}
-			overlay.style.display = 'flex';
-			overlayBox.style.display = 'unset';
-			document.body.style.overflow = 'hidden';
+			overlay.classList.add('active');
+			overlayBox.removeAttribute('style')
+			document.body.classList.add('overflow')
 			document.querySelector('.header').style.filter = "blur(4px)";
 			document.querySelector('.main').style.filter = "blur(4px)";
 			document.querySelector('.footer').style.filter = "blur(4px)";
@@ -109,13 +109,13 @@ document.querySelectorAll('form').forEach(form => {
 
 			overlay.addEventListener('click', (event) => {
 				if (event.target === overlay) {
-					overlay.style.display = 'none';
+					overlay.classList.remove('active')
 					overlayBox.style.display = 'none';
-					document.body.style.overflow = 'unset';
-					document.querySelector('.header').style.filter = "unset";
-					document.querySelector('.main').style.filter = "unset";
-					document.querySelector('.footer').style.filter = "unset";
-					document.querySelector('.navigation').style.filter = "unset";
+					document.body.classList.remove('overflow')
+					document.querySelector('.header').removeAttribute('style')
+					document.querySelector('.main').removeAttribute('style')
+					document.querySelector('.footer').removeAttribute('style')
+					document.querySelector('.navigation').removeAttribute('style')
 				}
 			});
 		}
@@ -124,15 +124,14 @@ document.querySelectorAll('form').forEach(form => {
 
 closeSuccessButton.forEach((el) => {
 	el.addEventListener('click', (event) => {
-
 		document.querySelectorAll('.overlay').forEach((el) => {
-			el.style.display = 'none';
+			el.classList.remove('active')
+			document.body.classList.remove('overflow')
 		})
+		document.querySelector('.header').removeAttribute('style')
+		document.querySelector('.main').removeAttribute('style')
+		document.querySelector('.footer').removeAttribute('style')
+		document.querySelector('.navigation').removeAttribute('style')
 		overlayBox.style.display = 'none';
-		document.body.style.overflow = 'unset'
-		document.querySelector('.header').style.filter = "unset";
-		document.querySelector('.main').style.filter = "unset";
-		document.querySelector('.footer').style.filter = "unset";
-		document.querySelector('.navigation').style.filter = "unset";
 	});
 })

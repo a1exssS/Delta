@@ -1,7 +1,23 @@
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin'
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
+
+const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+const aboutSectionLocation = document.querySelector('.header')
+const rect = aboutSectionLocation.getBoundingClientRect()
+const top = rect.top + scrollTop
+const linkToTop = document.querySelector('.footer__go-back')
+linkToTop.addEventListener('click', function (e) {
+	e.preventDefault()
+	gsap.to(window, {
+		duration: 1.2,
+		scrollTo: top,
+		ease: 'expo.out',
+	})
+})
+
 if (document.querySelector('.about-work__number')) {
 	gsap.fromTo(
 		'.about-work__number',
@@ -40,7 +56,3 @@ if (document.querySelector('.advancements__item')) {
 		}
 	)
 }
-document.querySelector('.footer__go-back').addEventListener('click', (e) => {
-	e.preventDefault()
-	window.scrollTo({ top: 0, behavior: 'smooth' })
-})

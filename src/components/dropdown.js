@@ -3,7 +3,6 @@ function adjustDropdownPosition(dropdown) {
 	if (!dropdownContent) return;
 
 	const dropdownRect = dropdownContent.getBoundingClientRect();
-	const spaceRight = window.innerWidth - dropdownRect.right;
 	const spaceLeft = dropdownRect.left;
 
 	if (spaceLeft >= dropdownRect.width) {

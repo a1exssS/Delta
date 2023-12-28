@@ -19,33 +19,18 @@ if (document.querySelector('.filter__options-item')) {
 			const resetAllButton = container.querySelector('.filter__button-submit');
 
 			rangePriceInputs.forEach((range) => {
-				range.addEventListener('input', function () {
+				range.addEventListener("change", function () {
 					let minRange = rangePriceInputs[0].getAttribute('data-price-range-min');
 					let maxRange = rangePriceInputs[1].getAttribute('data-price-range-max');
 					if (rangePriceInputs[0].value !== minRange || rangePriceInputs[1].value !== maxRange) {
-						if (selectedCount.closest('.filter__options-item').querySelector('.filter__dropdown_position')) {
-							selectedCount.closest('.filter__options-item').querySelector('.filter__dropdown_position').style.left = "unset"
-							window.addEventListener('resize', () => {
-								if (window.innerWidth > 739) {
-									selectedCount.closest('.filter__options-item').querySelector('.filter__dropdown_position').style.right = "24px"
-								}
-							})
-							if (window.innerWidth > 739) {
-								selectedCount.closest('.filter__options-item').querySelector('.filter__dropdown_position').style.right = "24px"
-							}
-						}
 						selectedCount.closest('.filter__options-item').querySelector('[data-reset-button]').style.display = "flex"
 					} else {
-						if (selectedCount.closest('.filter__options-item').querySelector('.filter__dropdown_position')) {
-							selectedCount.closest('.filter__options-item').querySelector('.filter__dropdown_position').style.left = "unset"
-							selectedCount.closest('.filter__options-item').querySelector('.filter__dropdown_position').style.right = "0px"
-						}
 						selectedCount.closest('.filter__options-item').querySelector('[data-reset-button]').style.display = "none"
 					}
 				});
 			})
 			rangeSizeInputs.forEach((range) => {
-				range.addEventListener('input', function () {
+				range.addEventListener("change", function () {
 					let minRange = rangeSizeInputs[0].getAttribute('data-size-range-min');
 					let maxRange = rangeSizeInputs[1].getAttribute('data-size-range-max');
 					if (rangeSizeInputs[0].value !== minRange || rangeSizeInputs[1].value !== maxRange) {

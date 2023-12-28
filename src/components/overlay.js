@@ -1,28 +1,17 @@
 
 const closeButton = document.querySelectorAll('.overlay__close-button')
-const submitOverlayButton = document.querySelectorAll('.overlay__button')
 const overlayBox = document.querySelector('.overlay-box')
-overlayBox.style.display = 'none'
-const overalyHeaderItems = document.querySelector('.header__items')
-overalyHeaderItems.style.display = 'unset'
+if (overlayBox) {
+	overlayBox.style.display = 'none'
+}
 
 if (document.querySelector('[consultation-overlay]')) {
 	const openButton = document.querySelector('[consultation-overlay]');
 	const overlay = document.getElementById('consultation-overlay');
 	openButton.addEventListener('click', () => {
-		overlay.style.display = 'flex';
+		overlay.classList.add('active')
 		overlayBox.style.display = 'unset';
-		if (window.innerWidth < 740) {
-			overalyHeaderItems.style.display = 'none';
-		}
-		window.addEventListener('resize', () => {
-			if (window.innerWidth < 740) {
-				overalyHeaderItems.style.display = 'none';
-			} else {
-				overalyHeaderItems.style.display = 'unset';
-			}
-		})
-		document.body.style.overflow = 'hidden'
+		document.body.classList.add('overflow')
 		document.querySelector('.header').style.filter = "blur(4px)";
 		document.querySelector('.main').style.filter = "blur(4px)";
 		document.querySelector('.footer').style.filter = "blur(4px)";
@@ -31,13 +20,13 @@ if (document.querySelector('[consultation-overlay]')) {
 
 	overlay.addEventListener('click', (event) => {
 		if (event.target === overlay) {
-			overlay.style.display = 'none';
+			overlay.classList.remove('active')
 			overlayBox.style.display = 'none';
-			document.body.style.overflow = 'unset'
-			document.querySelector('.header').style.filter = "unset";
-			document.querySelector('.main').style.filter = "unset";
-			document.querySelector('.footer').style.filter = "unset";
-			document.querySelector('.navigation').style.filter = "unset";
+			document.body.classList.remove('overflow')
+			document.querySelector('.header').removeAttribute('style')
+			document.querySelector('.main').removeAttribute('style')
+			document.querySelector('.footer').removeAttribute('style')
+			document.querySelector('.navigation').removeAttribute('style')
 		}
 	});
 
@@ -46,19 +35,9 @@ if (document.querySelector('[project-overlay]')) {
 	const openButton = document.querySelector('[project-overlay]');
 	const overlay = document.getElementById('project-overlay');
 	openButton.addEventListener('click', () => {
-		overlay.style.display = 'flex';
+		overlay.classList.add('active')
 		overlayBox.style.display = 'unset';
-		if (window.innerWidth < 740) {
-			overalyHeaderItems.style.display = 'none';
-		}
-		window.addEventListener('resize', () => {
-			if (window.innerWidth < 740) {
-				overalyHeaderItems.style.display = 'none';
-			} else {
-				overalyHeaderItems.style.display = 'unset';
-			}
-		})
-		document.body.style.overflow = 'hidden'
+		document.body.classList.add('overflow')
 		document.querySelector('.header').style.filter = "blur(4px)";
 		document.querySelector('.main').style.filter = "blur(4px)";
 		document.querySelector('.footer').style.filter = "blur(4px)";
@@ -67,13 +46,13 @@ if (document.querySelector('[project-overlay]')) {
 
 	overlay.addEventListener('click', (event) => {
 		if (event.target === overlay) {
-			overlay.style.display = 'none';
+			overlay.classList.remove('active')
 			overlayBox.style.display = 'none';
-			document.body.style.overflow = 'unset'
-			document.querySelector('.header').style.filter = "unset";
-			document.querySelector('.main').style.filter = "unset";
-			document.querySelector('.footer').style.filter = "unset";
-			document.querySelector('.navigation').style.filter = "unset";
+			document.body.classList.remove('overflow')
+			document.querySelector('.header').removeAttribute('style')
+			document.querySelector('.main').removeAttribute('style')
+			document.querySelector('.footer').removeAttribute('style')
+			document.querySelector('.navigation').removeAttribute('style')
 		}
 	});
 
@@ -83,9 +62,9 @@ if (document.querySelector('[header-overlay]')) {
 	const openButton = document.querySelector('[header-overlay]');
 	const overlay = document.getElementById('header-overlay');
 	openButton.addEventListener('click', () => {
-		overlay.style.display = 'flex';
+		document.body.classList.add('overflow')
+		overlay.classList.add('active')
 		overlayBox.style.display = 'unset';
-		document.body.style.overflow = 'hidden'
 		document.querySelector('.header').style.filter = "blur(4px)";
 		document.querySelector('.main').style.filter = "blur(4px)";
 		document.querySelector('.footer').style.filter = "blur(4px)";
@@ -94,25 +73,13 @@ if (document.querySelector('[header-overlay]')) {
 
 	overlay.addEventListener('click', (event) => {
 		if (event.target === overlay) {
-			overlay.style.display = 'none';
+			document.body.classList.remove('overflow')
+			overlay.classList.remove('active')
 			overlayBox.style.display = 'none';
-			overalyHeaderItems.style.display = 'unset';
-			if (window.innerWidth < 740) {
-				document.body.style.overflow = 'hidden'
-			} else {
-				document.body.style.overflow = 'unset'
-			}
-			window.addEventListener('resize', () => {
-				if (window.innerWidth < 740) {
-					document.body.style.overflow = 'hidden'
-				} else {
-					document.body.style.overflow = 'unset'
-				}
-			})
-			document.querySelector('.header').style.filter = "unset";
-			document.querySelector('.main').style.filter = "unset";
-			document.querySelector('.footer').style.filter = "unset";
-			document.querySelector('.navigation').style.filter = "unset";
+			document.querySelector('.header').removeAttribute('style')
+			document.querySelector('.main').removeAttribute('style')
+			document.querySelector('.footer').removeAttribute('style')
+			document.querySelector('.navigation').removeAttribute('style')
 		}
 	});
 }
@@ -120,25 +87,13 @@ if (document.querySelector('[header-overlay]')) {
 closeButton.forEach((el) => {
 	el.addEventListener('click', (event) => {
 		document.querySelectorAll('.overlay').forEach((el) => {
-			el.style.display = 'none';
+			el.classList.remove('active')
+			document.body.classList.remove('overflow')
 		})
-		if (window.innerWidth < 740) {
-			document.body.style.overflow = 'hidden'
-		} else {
-			document.body.style.overflow = 'unset'
-		}
-		window.addEventListener('resize', () => {
-			if (window.innerWidth < 740) {
-				document.body.style.overflow = 'hidden'
-			} else {
-				document.body.style.overflow = 'unset'
-			}
-		})
+		document.querySelector('.header').removeAttribute('style')
+		document.querySelector('.main').removeAttribute('style')
+		document.querySelector('.footer').removeAttribute('style')
+		document.querySelector('.navigation').removeAttribute('style')
 		overlayBox.style.display = 'none';
-		overalyHeaderItems.style.display = 'unset';
-		document.querySelector('.header').style.filter = "unset";
-		document.querySelector('.main').style.filter = "unset";
-		document.querySelector('.footer').style.filter = "unset";
-		document.querySelector('.navigation').style.filter = "unset";
 	});
 })

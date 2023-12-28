@@ -4,25 +4,9 @@ if (document.querySelector('[data-menu]')) {
 	const menu = document.querySelector('[data-menu]')
 	const openButton = document.querySelector('[data-menu-open]')
 	const closeButton = document.querySelector('[data-menu-close]')
-	const headerLinks = document.querySelectorAll('.header__item')
 
-
-	headerLinks.forEach(event => {
-		event.addEventListener('click', () => {
-			if (menu) {
-				menu.dataset.menu = 'open'
-				disableBodyScroll(menu)
-				openButton.innerHTML = `
-					<svg width="32px" height="32px">
-						<use xlink:href="../src/Images/sprite.svg#close" />
-					</svg>`
-			}
-
-		})
-	})
 	function toggleMenu() {
 		if (menu && menu.getAttribute('data-menu') === 'open') {
-			menu.style.display = 'unset'
 			menu.dataset.menu = 'close'
 			enableBodyScroll(menu)
 			openButton.innerHTML = `

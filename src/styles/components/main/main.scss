@@ -33,6 +33,10 @@
 @import "sections/overlay";
 @import "sections/lightbox";
 
+.overflow {
+	overflow: hidden;
+}
+
 .main {
 	&__page-not-found {
 		background-color: var(--beige-100-bg-color);

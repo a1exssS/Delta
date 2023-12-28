@@ -388,6 +388,11 @@
 		}
 	}
 
+	.right {
+		right: 0;
+		left: auto;
+	}
+
 	&__dropdown-box {}
 
 	&__options-item {

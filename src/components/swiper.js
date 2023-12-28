@@ -25,7 +25,7 @@ if (document.querySelector('.house-slider__swiper-galery')) {
 	});
 
 	MyThumbnail = new Swiper(".house-slider__swiper-thumbnail", {
-		//loop: true,
+		loop: true,
 		watchOverflow: true,
 		watchSlidesVisibility: true,
 		watchSlidesProgress: true,
