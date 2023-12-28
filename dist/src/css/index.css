@@ -5932,6 +5932,11 @@ body {
 	}
 }
 
+.filter .right {
+	right: 0;
+	left: auto
+}
+
 .filter__options-item {
 	position: relative;
 	transition: .2s linear
@@ -6696,6 +6701,15 @@ body {
 	height: 100%
 }
 
+.house-slider__swiper-side {
+	opacity: .5;
+	transition: opacity .2s linear !important
+}
+
+.house-slider__swiper-side:hover {
+	opacity: 1
+}
+
 .house-slider__swiper-button-next {
 	position: absolute;
 	top: 0
@@ -6948,6 +6962,10 @@ body {
 		height: 100%;
 		max-height: 100px
 	}
+}
+
+.house-slider .mySwiper1 .swiper-slide-thumb-active {
+	opacity: 1
 }
 
 .house-slider .mySwiper1 .swiper-slide-thumb-active img {
@@ -8156,14 +8174,20 @@ body {
 }
 
 .overlay {
+	display: none
+}
+
+.overlay.active {
 	position: fixed;
 	top: 0;
 	left: 0;
+	bottom: 0;
+	right: 0;
 	width: 100%;
 	height: 100%;
-	z-index: 1000000;
+	z-index: 1000;
 	background-color: #201109a3;
-	display: none;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
@@ -8171,7 +8195,7 @@ body {
 }
 
 @media (max-width: 767px) {
-	.overlay {
+	.overlay.active {
 		padding: 0 10px
 	}
 }
@@ -9544,6 +9568,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 #lg-download {
 	display: none
+}
+
+.overflow {
+	overflow: hidden
 }
 
 .main__page-not-found {
