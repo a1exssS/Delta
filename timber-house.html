@@ -8,6 +8,8 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
 	<title>Document</title>
+	<script type="module" crossorigin src="./src/js/index.js"></script>
+	<link rel="stylesheet" crossorigin href="./src/css/index.css">
 </head>
 
 <body>
@@ -1559,8 +1561,25 @@
 				</div>
 			</div>
 		</div>
+		<div class="overlay" id="error-overlay">
+			<div class="overlay__holder">
+				<button class="overlay__close-button">
+					<svg width="32px" height="32px">
+						<use xlink:href="./src/Images/sprite.svg#close" />
+					</svg>
+				</button>
+				<div class="popup">
+					<h3 class="h3-lg-bold overlay__title">Ошибка при отправке</h3>
+					<span class="overlay__text text-md">Заявка не была отправлена. Возможно, проблема на стороне сайта. На
+						всякий
+						случай, проверьте соединение с интернетом и попробуйте ещё раз.</span>
+					<button class="overlay__button overlay__button-error">Закрыть</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 </body>
+
 
 </html>
