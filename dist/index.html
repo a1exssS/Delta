@@ -746,7 +746,7 @@
 
 				<div class="footer__item">
 					<a href="" class="footer__image-link">
-						<img loading="lazy" src="src/Images/logo-footer.svg" alt="Логотип" class="footer__image">
+						<img loading="lazy" src="./src/Images/logo-footer.svg" alt="Логотип" class="footer__image">
 					</a>
 					<div class="footer__contacts">
 						<a href="tel:+89212045111" class="footer__phone-link h3-md-bold">8 921 204 51 11</a>
@@ -756,22 +756,22 @@
 					<div class="footer__items-socials">
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="src/Images/sprite.svg#vk" />
+								<use xlink:href="./src/Images/sprite.svg#vk" />
 							</svg>
 						</a>
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="src/Images/sprite.svg#instagram" />
+								<use xlink:href="./src/Images/sprite.svg#instagram" />
 							</svg>
 						</a>
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="src/Images/sprite.svg#whatsapp" />
+								<use xlink:href="./src/Images/sprite.svg#whatsapp" />
 							</svg>
 						</a>
 						<a href="" class="footer__link-socials">
 							<svg width="32px" height="32px">
-								<use xlink:href="src/Images/sprite.svg#viber" />
+								<use xlink:href="./src/Images/sprite.svg#viber" />
 							</svg>
 						</a>
 					</div>
@@ -797,12 +797,12 @@
 				</div>
 				<a href="" class="footer__go-back">
 					<svg width="32px" height="32px">
-						<use xlink:href="src/Images/sprite.svg#arrow-up" />
+						<use xlink:href="./src/Images/sprite.svg#arrow-up" />
 					</svg>
 				</a>
 				<div class="footer__made-by">
 					<svg width="32px" height="32px" class="footer__made-by-image">
-						<use xlink:href="src/Images/sprite.svg#art-gorka" />
+						<use xlink:href="./src/Images/sprite.svg#art-gorka" />
 					</svg>
 					<span class="footer__made-by-text text-sm">Сделано в ART Gorka</span>
 				</div>
@@ -881,6 +881,22 @@
 					<h3 class="h3-lg-bold overlay__title">Заявка отправлена</h3>
 					<span class="overlay__text text-md">Спасибо, что обратились к нам! Уже изучаем Вашу заявку.</span>
 					<button class="overlay__button overlay__button_success">Хорошо</button>
+				</div>
+			</div>
+		</div>
+		<div class="overlay" id="error-overlay">
+			<div class="overlay__holder">
+				<button class="overlay__close-button">
+					<svg width="32px" height="32px">
+						<use xlink:href="./src/Images/sprite.svg#close" />
+					</svg>
+				</button>
+				<div class="popup">
+					<h3 class="h3-lg-bold overlay__title">Ошибка при отправке</h3>
+					<span class="overlay__text text-md">Заявка не была отправлена. Возможно, проблема на стороне сайта. На
+						всякий
+						случай, проверьте соединение с интернетом и попробуйте ещё раз.</span>
+					<button class="overlay__button overlay__button-error">Закрыть</button>
 				</div>
 			</div>
 		</div>
