@@ -150,6 +150,7 @@
 
 		@media (max-width:767px) {
 			padding: 14px 0;
+			font-size: 16px;
 		}
 	}
 
@@ -189,5 +190,14 @@
 	&__button_success {
 		margin-top: 40px;
 		width: 100%;
+	}
+
+	&__button-error {
+		margin-top: 40px;
+		width: 100%;
+
+		@media (max-width:767px) {
+			margin-top: 30px;
+		}
 	}
 }

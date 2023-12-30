@@ -79,45 +79,117 @@ document.querySelectorAll('form').forEach(form => {
 		let emailValidation = email ? true : inputRequestEmail ? false : true
 
 		if (emailValidation && phone && validatePhoneNumber(phone)) {
-			inputRequestName.querySelector('input').value = '';
-			if (inputRequestEmail) {
-				inputRequestEmail.querySelector('input').value = '';
-				inputRequestEmail.classList.remove('error');
-			}
-			inputRequestPhone.querySelector('input').value = '';
+			function checkWebsiteConnection(url, successCallback, errorCallback) {
+				const xhr = new XMLHttpRequest();
+				xhr.open('HEAD', url);
 
-			const overlay = document.getElementById('success-overlay');
-			if (document.getElementById('consultation-overlay')) {
-				const consultationOverlay = document.getElementById('consultation-overlay')
-				consultationOverlay.classList.remove('active')
-			}
-			if (document.getElementById('project-overlay')) {
-				const consultationOverlay = document.getElementById('project-overlay')
-				consultationOverlay.classList.remove('active')
-			}
-			if (document.getElementById('header-overlay')) {
-				const consultationOverlay = document.getElementById('header-overlay')
-				consultationOverlay.classList.remove('active')
-			}
-			overlay.classList.add('active');
-			overlayBox.removeAttribute('style')
-			document.body.classList.add('overflow')
-			document.querySelector('.header').style.filter = "blur(4px)";
-			document.querySelector('.main').style.filter = "blur(4px)";
-			document.querySelector('.footer').style.filter = "blur(4px)";
-			document.querySelector('.navigation').style.filter = "blur(4px)";
+				xhr.onload = function () {
+					if (xhr.status >= 200 && xhr.status < 400) {
+						successCallback();
+					} else {
+						errorCallback();
+					}
+				};
 
-			overlay.addEventListener('click', (event) => {
-				if (event.target === overlay) {
-					overlay.classList.remove('active')
-					overlayBox.style.display = 'none';
-					document.body.classList.remove('overflow')
-					document.querySelector('.header').removeAttribute('style')
-					document.querySelector('.main').removeAttribute('style')
-					document.querySelector('.footer').removeAttribute('style')
-					document.querySelector('.navigation').removeAttribute('style')
+				xhr.onerror = function () {
+					errorCallback();
+				};
+
+				xhr.send();
+			}
+
+			const siteURL = 'https://jsonplaceholder.typicode.com/todos/1'; // Замените на URL вашего сайта
+
+			function onSuccess() {
+				inputRequestName.querySelector('input').value = '';
+				if (inputRequestEmail) {
+					inputRequestEmail.querySelector('input').value = '';
+					inputRequestEmail.classList.remove('error');
 				}
-			});
+				const overlay = document.getElementById('success-overlay');
+				if (document.getElementById('consultation-overlay')) {
+					const consultationOverlay = document.getElementById('consultation-overlay')
+					consultationOverlay.classList.remove('active')
+				}
+				if (document.getElementById('project-overlay')) {
+					const consultationOverlay = document.getElementById('project-overlay')
+					consultationOverlay.classList.remove('active')
+				}
+				if (document.getElementById('header-overlay')) {
+					const consultationOverlay = document.getElementById('header-overlay')
+					consultationOverlay.classList.remove('active')
+				}
+				overlay.classList.add('active');
+				overlayBox.removeAttribute('style')
+				document.body.classList.add('overflow')
+				document.querySelector('.header').style.filter = "blur(4px)";
+				document.querySelector('.main').style.filter = "blur(4px)";
+				document.querySelector('.footer').style.filter = "blur(4px)";
+				document.querySelector('.navigation').style.filter = "blur(4px)";
+
+				overlay.addEventListener('click', (event) => {
+					if (event.target === overlay) {
+						overlay.classList.remove('active')
+						overlayBox.style.display = 'none';
+						document.body.classList.remove('overflow')
+						document.querySelector('.header').removeAttribute('style')
+						document.querySelector('.main').removeAttribute('style')
+						document.querySelector('.footer').removeAttribute('style')
+						document.querySelector('.navigation').removeAttribute('style')
+					}
+				});
+				inputRequestPhone.querySelector('input').value = '';
+			}
+
+			function onError() {
+				const closeErrorButton = document.querySelectorAll('.overlay__button-error')
+
+				if (document.querySelector('#error-overlay')) {
+					const overlay = document.getElementById('error-overlay');
+					const allOverlays = document.querySelectorAll('.overlay')
+					allOverlays.forEach((el) => {
+						el.classList.remove('active')
+					})
+					overlay.classList.add('active')
+					overlayBox.style.display = 'unset';
+					document.body.classList.add('overflow')
+					document.querySelector('.header').style.filter = "blur(4px)";
+					document.querySelector('.main').style.filter = "blur(4px)";
+					document.querySelector('.footer').style.filter = "blur(4px)";
+					document.querySelector('.navigation').style.filter = "blur(4px)";
+
+					overlay.addEventListener('click', (event) => {
+						if (event.target === overlay) {
+							overlay.classList.remove('active')
+							overlayBox.style.display = 'none';
+							document.body.classList.remove('overflow')
+							document.querySelector('.header').removeAttribute('style')
+							document.querySelector('.main').removeAttribute('style')
+							document.querySelector('.footer').removeAttribute('style')
+							document.querySelector('.navigation').removeAttribute('style')
+						}
+					});
+
+					closeErrorButton.forEach((el) => {
+						el.addEventListener('click', (event) => {
+							document.querySelectorAll('.overlay').forEach((el) => {
+								el.classList.remove('active')
+								document.body.classList.remove('overflow')
+							})
+							document.querySelector('.header').removeAttribute('style')
+							document.querySelector('.main').removeAttribute('style')
+							document.querySelector('.footer').removeAttribute('style')
+							document.querySelector('.navigation').removeAttribute('style')
+							overlayBox.style.display = 'none';
+						});
+					})
+				}
+			}
+
+			// Проверяем соединение с сайтом
+			checkWebsiteConnection(siteURL, onSuccess, onError);
+
+
 		}
 	});
 });
